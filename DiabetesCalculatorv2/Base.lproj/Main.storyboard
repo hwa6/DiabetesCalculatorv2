@@ -216,6 +216,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="mCR-Di-VAY"/>
                     <connections>
+                        <outlet property="cf1name" destination="geD-TM-9DQ" id="okD-a1-GZT"/>
+                        <outlet property="cr1name" destination="qOk-0F-4sI" id="SPf-bP-X9W"/>
                         <outlet property="profile1name" destination="v1p-0Y-Gpb" id="mmI-Do-NK6"/>
                     </connections>
                 </viewController>
@@ -271,7 +273,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZn-Lc-zmn">
-                                <rect key="frame" x="229" y="404" width="107" height="53"/>
+                                <rect key="frame" x="229" y="403" width="107" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -294,6 +296,11 @@
                         <viewLayoutGuide key="safeArea" id="50A-Tq-sfA"/>
                     </view>
                     <navigationItem key="navigationItem" id="Whx-HS-s1t"/>
+                    <connections>
+                        <outlet property="carbRatioVar" destination="EZn-Lc-zmn" id="afT-dU-YCr"/>
+                        <outlet property="correctionFactorVar" destination="ayn-GA-OhS" id="z8u-KU-qRp"/>
+                        <outlet property="profileNameVar" destination="i5i-tg-h9H" id="Wwx-0b-MxK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gct-f0-ydm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="JyD-PR-tS7" userLabel="Exit" sceneMemberID="exit"/>

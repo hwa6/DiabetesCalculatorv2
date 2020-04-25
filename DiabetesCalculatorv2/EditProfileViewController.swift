@@ -10,6 +10,11 @@ import UIKit
 
 class EditProfileViewController: UIViewController {
     
+    @IBOutlet weak var profileNameVar: UITextField!
+    
+    @IBOutlet weak var correctionFactorVar: UITextField!
+    
+    @IBOutlet weak var carbRatioVar: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +22,9 @@ class EditProfileViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! ProfileListViewController
-        destVC.passedDataString = "Data was passed"
+        destVC.passedDataString = profileNameVar.text!
+        destVC.passedCFString = correctionFactorVar.text!
+        destVC.passedCRString = carbRatioVar.text!
     }
     
 
