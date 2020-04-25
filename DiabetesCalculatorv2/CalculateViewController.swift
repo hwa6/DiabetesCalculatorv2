@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  DiabetesCalculatorv2
 //
 //  Created by Nicole Miller on 4/17/20.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class SecondViewController: UIViewController{
+class CalculateViewController: UIViewController {
 
-    @IBAction func buttonPress(_ sender: Any) {
-        performSegue(withIdentifier: "editSegue", sender: sender)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
