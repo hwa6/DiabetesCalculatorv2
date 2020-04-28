@@ -17,21 +17,28 @@ class Edit4ProfileViewController: UIViewController {
     @IBOutlet weak var carb4RatioVar: UITextField!
     
     @IBAction func saveChanges(_ sender: UIButton) {
-        if (EditProfileViewController.GlobalVariable.profileArray.isEmpty == true){ //probs shouldnt be triggered at least not yet
-            EditProfileViewController.GlobalVariable.profileArray.append(profile4NameVar.text!)
+        if(profile4NameVar.text == ""){
+                EditProfileViewController.GlobalVariable.profileArray[4] = "Profile 4"
+            }
+            else{
+                EditProfileViewController.GlobalVariable.profileArray[4] = profile4NameVar.text!
+            }
             
-            print("if condition met")
-           
-        }
-        else {
-           
-            EditProfileViewController.GlobalVariable.profileArray[4] = profile4NameVar.text!
-            EditProfileViewController.GlobalVariable.correctionArray[4] = Double (correction4FactorVar.text!)!
+            if(correction4FactorVar.text == ""){
+                EditProfileViewController.GlobalVariable.correctionArray[4] = Double ("0")!
+            }
+            else{
+                EditProfileViewController.GlobalVariable.correctionArray[4] = Double (correction4FactorVar.text!)!
+            }
+            
+            if(carb4RatioVar.text == ""){
+                EditProfileViewController.GlobalVariable.carbArray[4] = Double ("0")!
+            }
+            else{
             EditProfileViewController.GlobalVariable.carbArray[4] = Double (carb4RatioVar.text!)!
-            print("else statement met")
+            }
             
         }
-    }
     
 
     override func viewDidLoad() {
@@ -45,8 +52,8 @@ class Edit4ProfileViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! ProfileListViewController
         destVC.passed4DataString = profile4NameVar.text!
-        destVC.passed4CFString = correction4FactorVar.text!
-        destVC.passed4CRString = carb4RatioVar.text!
+        destVC.passed4CFString = Double (correction4FactorVar.text!)!
+        destVC.passed4CRString =  Double (carb4RatioVar.text!)!
     }
     
 

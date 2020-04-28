@@ -47,8 +47,13 @@ class CalculateViewController: UIViewController {
             carbTotalVar = Double(carbTotal.text!)!
         }
         
-        if(target == 0 || carbRatio == 0 || correctionFactor == 0){
-            if(carbRatio == 0){
+        
+        
+        if(target == 0 || carbRatio == 0 || correctionFactor == 0 || EditProfileViewController.GlobalVariable.activeIndex == 0){
+            if(EditProfileViewController.GlobalVariable.activeIndex == 0){
+                outputDisplay.text = "Profile Never Selected"
+            }
+            else if(carbRatio == 0){
                 outputDisplay.text = "Correction Factor Set to 0"
             }
             else if(correctionFactor == 0){
@@ -59,12 +64,10 @@ class CalculateViewController: UIViewController {
             }
             
         }
-        else if(target == 0 && carbRatio == 0 && correctionFactor == 0){
-            outputDisplay.text = "Profile Never Selected"
-        }
+        
         else{
             output = ((bloodSugarVar-target)/(correctionFactor))+(carbTotalVar/carbRatio)
-            if(bloodSugarVar < 80){
+            if(bloodSugarVar < EditProfileViewController.GlobalVariable.currentLow){
                 outputDisplay.text = "Low, Consume Carbs"
             }
             else{
@@ -106,9 +109,12 @@ class CalculateViewController: UIViewController {
         currentCorrection = String (EditProfileViewController.GlobalVariable.correctionArray[EditProfileViewController.GlobalVariable.activeIndex])
         currentCarb = String (EditProfileViewController.GlobalVariable.carbArray[EditProfileViewController.GlobalVariable.activeIndex])
         
+        //displays profile name
         currentNameLabel.text = currentName
-        currentCorrectionLabel.text = currentCorrection
-        currentCarbLabel.text = currentCarb
+        
+        //currentNameLabel.text = "Current Profile: " + currentName
+        //currentCorrectionLabel.text = "Current Correction Factor: " + currentCorrection
+        //currentCarbLabel.text = "Current Carb Factor: " + currentCarb
     }
     
     

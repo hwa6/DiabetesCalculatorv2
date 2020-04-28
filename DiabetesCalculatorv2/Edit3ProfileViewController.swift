@@ -55,8 +55,8 @@ class Edit3ProfileViewController: UIViewController {
                    else{
                        destVC.passed3DataString = profile3NameVar.text!
                    }
-        destVC.passed3CFString = correction3FactorVar.text!
-        destVC.passed3CRString = carb3RatioVar.text!
+        destVC.passed3CFString = Double (correction3FactorVar.text!)!
+        destVC.passed3CRString = Double (carb3RatioVar.text!)!
     }
     
 

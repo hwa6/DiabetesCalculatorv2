@@ -20,6 +20,7 @@
 		BAC056E924563DD9005D21D9 /* Edit4ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */; };
 		BAC056EB245641B9005D21D9 /* Edit3ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056EA245641B9005D21D9 /* Edit3ProfileViewController.swift */; };
 		BAC056ED245665C2005D21D9 /* EditTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056EC245665C2005D21D9 /* EditTargetViewController.swift */; };
+		BAC056EF2457C219005D21D9 /* EditLowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056EE2457C219005D21D9 /* EditLowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit4ProfileViewController.swift; sourceTree = "<group>"; };
 		BAC056EA245641B9005D21D9 /* Edit3ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit3ProfileViewController.swift; sourceTree = "<group>"; };
 		BAC056EC245665C2005D21D9 /* EditTargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTargetViewController.swift; sourceTree = "<group>"; };
+		BAC056EE2457C219005D21D9 /* EditLowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				BAC056EA245641B9005D21D9 /* Edit3ProfileViewController.swift */,
 				BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */,
 				BAC056EC245665C2005D21D9 /* EditTargetViewController.swift */,
+				BAC056EE2457C219005D21D9 /* EditLowViewController.swift */,
 				0A3E96BC244A445A003836D9 /* Assets.xcassets */,
 				0A3E96B9244A4450003836D9 /* Main.storyboard */,
 				0A3E96BE244A445A003836D9 /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3E96B8244A4450003836D9 /* ProfileListViewController.swift in Sources */,
+				BAC056EF2457C219005D21D9 /* EditLowViewController.swift in Sources */,
 				0A3E96B6244A4450003836D9 /* CalculateViewController.swift in Sources */,
 				BAC056E12454AAF7005D21D9 /* Edit2ProfileViewController.swift in Sources */,
 				BABBFA9624511261006470CE /* EditProfileViewController.swift in Sources */,

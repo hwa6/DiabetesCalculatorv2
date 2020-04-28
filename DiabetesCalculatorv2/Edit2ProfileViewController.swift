@@ -18,21 +18,28 @@ class Edit2ProfileViewController: UIViewController {
     
     //adds values from screen to respective arrays
     @IBAction func saveChanges(_ sender: Any) {
-        if (EditProfileViewController.GlobalVariable.profileArray.isEmpty == true){ //probs shouldnt be triggered at least not yet
-            EditProfileViewController.GlobalVariable.profileArray.append(profile2NameVar.text!)
+        if(profile2NameVar.text == ""){
+                EditProfileViewController.GlobalVariable.profileArray[2] = "Profile 2"
+            }
+            else{
+                EditProfileViewController.GlobalVariable.profileArray[2] = profile2NameVar.text!
+            }
             
-            print("if condition met")
-           
-        }
-        else {
-           
-            EditProfileViewController.GlobalVariable.profileArray[2] = profile2NameVar.text!
-            EditProfileViewController.GlobalVariable.correctionArray[2] = Double (correction2FactorVar.text!)!
+            if(correction2FactorVar.text == ""){
+                EditProfileViewController.GlobalVariable.correctionArray[2] = Double ("0")!
+            }
+            else{
+                EditProfileViewController.GlobalVariable.correctionArray[2] = Double (correction2FactorVar.text!)!
+            }
+            
+            if(carb2RatioVar.text == ""){
+                EditProfileViewController.GlobalVariable.carbArray[2] = Double ("0")!
+            }
+            else{
             EditProfileViewController.GlobalVariable.carbArray[2] = Double (carb2RatioVar.text!)!
-            print("else statement met")
+            }
             
         }
-    }
     
     
     
@@ -52,8 +59,8 @@ class Edit2ProfileViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! ProfileListViewController
         destVC.passed2DataString = profile2NameVar.text!
-        destVC.passed2CFString = correction2FactorVar.text!
-        destVC.passed2CRString = carb2RatioVar.text!
+        destVC.passed2CFString = Double (correction2FactorVar.text!)!
+        destVC.passed2CRString = Double (carb2RatioVar.text!)!
     }
     
    

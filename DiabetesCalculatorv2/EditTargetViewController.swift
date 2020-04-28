@@ -20,7 +20,7 @@ class EditTargetViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
         self.hideKeyboardOnTap()
         super.viewWillAppear(true)
-        currentTargetLabel.text = String( EditProfileViewController.GlobalVariable.currentTarget)
+        currentTargetLabel.text = String( EditProfileViewController.GlobalVariable.currentTarget ) + " mg/dL"
     }
         
         

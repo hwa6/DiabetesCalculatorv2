@@ -19,21 +19,28 @@ class EditProfileViewController: UIViewController {
     
     //adds values from screen to respective arrays
     @IBAction func saveChanges(_ sender: UIButton) {
-        if (GlobalVariable.profileArray.isEmpty == true){ //probs shouldnt be triggered at least not yet
-            GlobalVariable.profileArray.append(profileNameVar.text!)
+        if(profileNameVar.text == ""){
+                EditProfileViewController.GlobalVariable.profileArray[1] = "Profile 1"
+            }
+            else{
+                EditProfileViewController.GlobalVariable.profileArray[1] = profileNameVar.text!
+            }
             
-            print("if condition met")
-           
-        }
-        else {
-           
-            GlobalVariable.profileArray[1] = profileNameVar.text!
-            GlobalVariable.correctionArray[1] = Double (correctionFactorVar.text!)!
-            GlobalVariable.carbArray[1] = Double (carbRatioVar.text!)!
-            print("else statement met")
+            if(correctionFactorVar.text == ""){
+                EditProfileViewController.GlobalVariable.correctionArray[1] = Double ("0")!
+            }
+            else{
+                EditProfileViewController.GlobalVariable.correctionArray[1] = Double (correctionFactorVar.text!)!
+            }
+            
+            if(carbRatioVar.text == ""){
+                EditProfileViewController.GlobalVariable.carbArray[1] = Double ("0")!
+            }
+            else{
+            EditProfileViewController.GlobalVariable.carbArray[1] = Double (carbRatioVar.text!)!
+            }
             
         }
-    }
     
     
     override func viewDidLoad() {
@@ -46,16 +53,17 @@ class EditProfileViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! ProfileListViewController
         destVC.passedDataString = profileNameVar.text!
-        destVC.passedCFString = correctionFactorVar.text!
-        destVC.passedCRString = carbRatioVar.text!
+        destVC.passedCFString = Double (correctionFactorVar.text!)!
+        destVC.passedCRString = Double (carbRatioVar.text!)!
     }
     
     struct GlobalVariable { //struct global variable thing, used throughout app
-        static var profileArray = [String](arrayLiteral: "0","no active profile","two","three","four")
-        static var correctionArray = [Double](arrayLiteral: 0,0,2,3,4)
+        static var profileArray = [String](arrayLiteral: "No Profile Set Active","Profile 1","Profile 2","Profile 3","Profile 4")
+        static var correctionArray = [Double](arrayLiteral: 0,0,0,0,0)
         static var carbArray = [Double](arrayLiteral: 0,0,0,0,0)
-        static var activeIndex = Int(1)
-        static var currentTarget = Double(0)
+        static var activeIndex = Int(0)
+        static var currentTarget = Double(120)
+        static var currentLow = Double(80)
             
        }
     
