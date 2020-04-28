@@ -29,15 +29,20 @@ class Edit3ProfileViewController: UIViewController {
                 EditProfileViewController.GlobalVariable.correctionArray[3] = Double ("0")!
             }
             else{
-                EditProfileViewController.GlobalVariable.correctionArray[3] = Double (correction3FactorVar.text!)!
+                EditProfileViewController.GlobalVariable.correctionArray[3] = Double (correction3FactorVar.text!) ?? 0
             }
             
             if(carb3RatioVar.text == ""){
                 EditProfileViewController.GlobalVariable.carbArray[3] = Double ("0")!
             }
             else{
-            EditProfileViewController.GlobalVariable.carbArray[3] = Double (carb3RatioVar.text!)!
+            EditProfileViewController.GlobalVariable.carbArray[3] = Double (carb3RatioVar.text!) ?? 0
             }
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.profileArray, forKey: "savedNameArray")
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.correctionArray, forKey: "savedCorrectionArray")
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.carbArray, forKey: "savedCarbArray")
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.activeIndex, forKey: "savedIndex")
+            UserDefaults.standard.synchronize()
             
         }
     
@@ -55,8 +60,8 @@ class Edit3ProfileViewController: UIViewController {
                    else{
                        destVC.passed3DataString = profile3NameVar.text!
                    }
-        destVC.passed3CFString = Double (correction3FactorVar.text!)!
-        destVC.passed3CRString = Double (carb3RatioVar.text!)!
+        destVC.passed3CFString = Double (correction3FactorVar.text!) ?? 0
+        destVC.passed3CRString = Double (carb3RatioVar.text!) ?? 0
     }
     
 

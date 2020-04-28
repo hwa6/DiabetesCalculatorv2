@@ -33,8 +33,11 @@ class EditTargetViewController: UIViewController {
             
         }
         else{
-            EditProfileViewController.GlobalVariable.currentTarget = Double(newTargetField.text!)!
+            EditProfileViewController.GlobalVariable.currentTarget = Double(newTargetField.text!) ?? 0
         }
+        UserDefaults.standard.set(EditProfileViewController.GlobalVariable.currentTarget, forKey: "savedTarget")
+        UserDefaults.standard.synchronize()
+        
     }
     
 

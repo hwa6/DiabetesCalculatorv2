@@ -29,8 +29,10 @@ class EditLowViewController: UIViewController {
                   
               }
               else{
-                  EditProfileViewController.GlobalVariable.currentLow = Double(newLowField.text!)!
+                  EditProfileViewController.GlobalVariable.currentLow = Double(newLowField.text!) ?? 0
               }
+        UserDefaults.standard.set(EditProfileViewController.GlobalVariable.currentLow, forKey: "savedLow")
+        UserDefaults.standard.synchronize()
     }
     
     

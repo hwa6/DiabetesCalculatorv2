@@ -30,18 +30,30 @@ class EditProfileViewController: UIViewController {
                 EditProfileViewController.GlobalVariable.correctionArray[1] = Double ("0")!
             }
             else{
-                EditProfileViewController.GlobalVariable.correctionArray[1] = Double (correctionFactorVar.text!)!
+                EditProfileViewController.GlobalVariable.correctionArray[1] = Double (correctionFactorVar.text!) ?? 0
             }
             
             if(carbRatioVar.text == ""){
                 EditProfileViewController.GlobalVariable.carbArray[1] = Double ("0")!
             }
             else{
-            EditProfileViewController.GlobalVariable.carbArray[1] = Double (carbRatioVar.text!)!
+            EditProfileViewController.GlobalVariable.carbArray[1] = Double (carbRatioVar.text!) ?? 0
             }
-            
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.profileArray, forKey: "savedNameArray")
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.correctionArray, forKey: "savedCorrectionArray")
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.carbArray, forKey: "savedCarbArray")
+            UserDefaults.standard.set(EditProfileViewController.GlobalVariable.activeIndex, forKey: "savedIndex")
+            UserDefaults.standard.synchronize()
+            //resetDefaults()
         }
     
+    func resetDefaults() {
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
+        }
+    }
     
     override func viewDidLoad() {
         self.navigationController?.navigationBar.isHidden = false
@@ -53,17 +65,18 @@ class EditProfileViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! ProfileListViewController
         destVC.passedDataString = profileNameVar.text!
-        destVC.passedCFString = Double (correctionFactorVar.text!)!
-        destVC.passedCRString = Double (carbRatioVar.text!)!
+        destVC.passedCFString = Double (correctionFactorVar.text!) ?? 0
+        destVC.passedCRString = Double (carbRatioVar.text!) ?? 0
     }
     
     struct GlobalVariable { //struct global variable thing, used throughout app
-        static var profileArray = [String](arrayLiteral: "No Profile Set Active","Profile 1","Profile 2","Profile 3","Profile 4")
-        static var correctionArray = [Double](arrayLiteral: 0,0,0,0,0)
-        static var carbArray = [Double](arrayLiteral: 0,0,0,0,0)
-        static var activeIndex = Int(0)
-        static var currentTarget = Double(120)
-        static var currentLow = Double(80)
+        //var profileArray = [String](arrayLiteral: "No Profile Set Active","Profile 1","Profile 2","Profile 3","Profile 4")
+        static var profileArray = UserDefaults.standard.stringArray(forKey: "savedNameArray") ?? [String](arrayLiteral: "No Profile Set Active","Profile 1","Profile 2","Profile 3","Profile 4")
+        static var correctionArray = UserDefaults.standard.array(forKey: "savedCorrectionArray") as? [Double] ?? [Double](arrayLiteral: 0,0,0,0,0)
+        static var carbArray = UserDefaults.standard.array(forKey: "savedCarbArray") as? [Double] ?? [Double](arrayLiteral: 0,0,0,0,0)
+        static var activeIndex = UserDefaults.standard.integer(forKey: "savedIndex")
+        static var currentTarget = UserDefaults.standard.double(forKey: "savedTarget")
+        static var currentLow = UserDefaults.standard.double(forKey: "savedLow")
             
        }
     

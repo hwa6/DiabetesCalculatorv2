@@ -24,9 +24,12 @@ class CalculateViewController: UIViewController {
     var outputFormatted = " "
     var target = EditProfileViewController.GlobalVariable.currentTarget
     
+    
     //button function for calculating dose
     @IBAction func calculateButton(_ sender: Any) {
         //gets current target
+        var low = EditProfileViewController.GlobalVariable.currentLow
+        var index = EditProfileViewController.GlobalVariable.activeIndex
         var target = EditProfileViewController.GlobalVariable.currentTarget
         //gets current profile info
         correctionFactor = EditProfileViewController.GlobalVariable.correctionArray[EditProfileViewController.GlobalVariable.activeIndex]
@@ -49,15 +52,18 @@ class CalculateViewController: UIViewController {
         
         
         
-        if(target == 0 || carbRatio == 0 || correctionFactor == 0 || EditProfileViewController.GlobalVariable.activeIndex == 0){
-            if(EditProfileViewController.GlobalVariable.activeIndex == 0){
+        if(target == 0 || carbRatio == 0 || correctionFactor == 0 || index == 0 || low == 0){
+            if(index == 0){
                 outputDisplay.text = "Profile Never Selected"
             }
-            else if(carbRatio == 0){
+            else if(correctionFactor == 0){
                 outputDisplay.text = "Correction Factor Set to 0"
             }
-            else if(correctionFactor == 0){
+            else if(carbRatio == 0){
                 outputDisplay.text = "Carb Ratio Set to 0"
+            }
+            else if(low == 0){
+                outputDisplay.text = "Low threshold set to 0"
             }
             else{
                 outputDisplay.text = "Target set to 0"
@@ -69,6 +75,9 @@ class CalculateViewController: UIViewController {
             output = ((bloodSugarVar-target)/(correctionFactor))+(carbTotalVar/carbRatio)
             if(bloodSugarVar < EditProfileViewController.GlobalVariable.currentLow){
                 outputDisplay.text = "Low, Consume Carbs"
+            }
+            else if(output<0){
+                outputDisplay.text = "Insulin Not Recommended (Negative Dose)"
             }
             else{
             outputFormatted = String(format: "%.1f", output)
