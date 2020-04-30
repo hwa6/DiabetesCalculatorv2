@@ -10,8 +10,10 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+
+        self.navigationController?.navigationBar.isHidden = true
+        super.viewWillAppear(true)
 
         // Do any additional setup after loading the view.
     }

@@ -15,6 +15,14 @@
 		0A3E96BD244A445A003836D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E96BC244A445A003836D9 /* Assets.xcassets */; };
 		0A3E96C0244A445A003836D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E96BE244A445A003836D9 /* LaunchScreen.storyboard */; };
 		0A3E96C8244A4682003836D9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E96C7244A4682003836D9 /* InfoViewController.swift */; };
+		BA224D142459560300B2DD8E /* UserAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D132459560300B2DD8E /* UserAgreementViewController.swift */; };
+		BA224D16245A082200B2DD8E /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D15245A082200B2DD8E /* PrivacyPolicyViewController.swift */; };
+		BA224D3A245B401400B2DD8E /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D39245B401400B2DD8E /* DeviceHelper.swift */; };
+		BA224D3C245B401D00B2DD8E /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D3B245B401D00B2DD8E /* NSLayoutHelper.swift */; };
+		BA224D3E245B402300B2DD8E /* UIButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D3D245B402300B2DD8E /* UIButtonHelper.swift */; };
+		BA224D40245B402700B2DD8E /* UILabelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D3F245B402700B2DD8E /* UILabelHelper.swift */; };
+		BA224D42245B402F00B2DD8E /* UITextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D41245B402F00B2DD8E /* UITextFieldHelper.swift */; };
+		BA224D44245B403700B2DD8E /* UITextViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D43245B403700B2DD8E /* UITextViewHelper.swift */; };
 		BABBFA9624511261006470CE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABBFA9524511261006470CE /* EditProfileViewController.swift */; };
 		BAC056E12454AAF7005D21D9 /* Edit2ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056E02454AAF7005D21D9 /* Edit2ProfileViewController.swift */; };
 		BAC056E924563DD9005D21D9 /* Edit4ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */; };
@@ -34,6 +42,14 @@
 		0A3E96BF244A445A003836D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3E96C1244A445A003836D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3E96C7244A4682003836D9 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		BA224D132459560300B2DD8E /* UserAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementViewController.swift; sourceTree = "<group>"; };
+		BA224D15245A082200B2DD8E /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		BA224D39245B401400B2DD8E /* DeviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		BA224D3B245B401D00B2DD8E /* NSLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutHelper.swift; sourceTree = "<group>"; };
+		BA224D3D245B402300B2DD8E /* UIButtonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonHelper.swift; sourceTree = "<group>"; };
+		BA224D3F245B402700B2DD8E /* UILabelHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelHelper.swift; sourceTree = "<group>"; };
+		BA224D41245B402F00B2DD8E /* UITextFieldHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldHelper.swift; sourceTree = "<group>"; };
+		BA224D43245B403700B2DD8E /* UITextViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewHelper.swift; sourceTree = "<group>"; };
 		BABBFA9524511261006470CE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		BAC056E02454AAF7005D21D9 /* Edit2ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit2ProfileViewController.swift; sourceTree = "<group>"; };
 		BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit4ProfileViewController.swift; sourceTree = "<group>"; };
@@ -83,12 +99,28 @@
 				BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */,
 				BAC056EC245665C2005D21D9 /* EditTargetViewController.swift */,
 				BAC056EE2457C219005D21D9 /* EditLowViewController.swift */,
+				BA224D132459560300B2DD8E /* UserAgreementViewController.swift */,
+				BA224D15245A082200B2DD8E /* PrivacyPolicyViewController.swift */,
 				0A3E96BC244A445A003836D9 /* Assets.xcassets */,
 				0A3E96B9244A4450003836D9 /* Main.storyboard */,
 				0A3E96BE244A445A003836D9 /* LaunchScreen.storyboard */,
 				0A3E96C1244A445A003836D9 /* Info.plist */,
+				BA224D45245B42D100B2DD8E /* Helpers */,
 			);
 			path = DiabetesCalculatorv2;
+			sourceTree = "<group>";
+		};
+		BA224D45245B42D100B2DD8E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA224D39245B401400B2DD8E /* DeviceHelper.swift */,
+				BA224D3B245B401D00B2DD8E /* NSLayoutHelper.swift */,
+				BA224D3D245B402300B2DD8E /* UIButtonHelper.swift */,
+				BA224D3F245B402700B2DD8E /* UILabelHelper.swift */,
+				BA224D43245B403700B2DD8E /* UITextViewHelper.swift */,
+				BA224D41245B402F00B2DD8E /* UITextFieldHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,15 +194,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA224D40245B402700B2DD8E /* UILabelHelper.swift in Sources */,
 				0A3E96B8244A4450003836D9 /* ProfileListViewController.swift in Sources */,
 				BAC056EF2457C219005D21D9 /* EditLowViewController.swift in Sources */,
 				0A3E96B6244A4450003836D9 /* CalculateViewController.swift in Sources */,
 				BAC056E12454AAF7005D21D9 /* Edit2ProfileViewController.swift in Sources */,
+				BA224D16245A082200B2DD8E /* PrivacyPolicyViewController.swift in Sources */,
 				BABBFA9624511261006470CE /* EditProfileViewController.swift in Sources */,
 				0A3E96C8244A4682003836D9 /* InfoViewController.swift in Sources */,
+				BA224D142459560300B2DD8E /* UserAgreementViewController.swift in Sources */,
+				BA224D3C245B401D00B2DD8E /* NSLayoutHelper.swift in Sources */,
+				BA224D3E245B402300B2DD8E /* UIButtonHelper.swift in Sources */,
 				BAC056E924563DD9005D21D9 /* Edit4ProfileViewController.swift in Sources */,
 				0A3E96B2244A4450003836D9 /* AppDelegate.swift in Sources */,
+				BA224D42245B402F00B2DD8E /* UITextFieldHelper.swift in Sources */,
 				BAC056ED245665C2005D21D9 /* EditTargetViewController.swift in Sources */,
+				BA224D44245B403700B2DD8E /* UITextViewHelper.swift in Sources */,
+				BA224D3A245B401400B2DD8E /* DeviceHelper.swift in Sources */,
 				BAC056EB245641B9005D21D9 /* Edit3ProfileViewController.swift in Sources */,
 				0A3E96B4244A4450003836D9 /* SceneDelegate.swift in Sources */,
 			);

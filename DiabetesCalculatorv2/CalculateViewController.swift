@@ -121,14 +121,19 @@ class CalculateViewController: UIViewController {
         //displays profile name
         currentNameLabel.text = currentName
         
-        //currentNameLabel.text = "Current Profile: " + currentName
-        //currentCorrectionLabel.text = "Current Correction Factor: " + currentCorrection
-        //currentCarbLabel.text = "Current Carb Factor: " + currentCarb
+        
+        
+        let screenSize: CGRect = UIScreen.main.bounds
+        
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        
+        print("Screen width = \(screenWidth), screen height = \(screenHeight)")
     }
     
+  
     
    
 
 
 }
-
