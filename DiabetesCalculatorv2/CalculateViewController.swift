@@ -125,7 +125,20 @@ class CalculateViewController: UIViewController {
     }
     
   
-    
+    //first launch user agreement
+    let disclaimer = """
+    Diabetes Calculator values your privacy and does NOT share any information with outside entities.
+    This includes profile, blood sugar, and carbohydrate data.
+    All materials in this application unless noted are the copyright property of Henry Anderson and cannot be
+    reproduced or used without express written consent.
+    By using Diabetes Calculator, you are agreeing to the User License Agreement and Privacy Policy.
+    You assume all liability for your own insulin doses.
+    This app is intended as a guide and useful tool, but should not be the only apparatus used for calculation.
+    Diabetes Calculator is not responsible for your insulin doses or any resulting issues from an incorrect dose.
+
+    By clicking OK, you have read and agreed to the above statement, and have or will read the User License Agreement and Privacy Policy
+    before using Diabetes Calculator.
+    """
    
 
 

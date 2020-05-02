@@ -11,7 +11,7 @@
         <!--Calculate-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="CalculateViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="CalculateViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3bR-t2-Aze" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="1CT-jv-gjO"/>
-                            <constraint firstItem="SZs-HX-93N" firstAttribute="top" secondItem="QoP-Be-8w5" secondAttribute="bottom" constant="8" id="1sQ-er-A9S" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="SZs-HX-93N" firstAttribute="top" secondItem="QoP-Be-8w5" secondAttribute="bottom" constant="8" id="1sQ-er-A9S" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="4"/>
@@ -119,7 +119,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="QoP-Be-8w5" firstAttribute="top" secondItem="HZz-NJ-bOv" secondAttribute="bottom" constant="97" id="60K-xF-hPk" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="QoP-Be-8w5" firstAttribute="top" secondItem="HZz-NJ-bOv" secondAttribute="bottom" constant="97" id="60K-xF-hPk" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="45"/>
@@ -135,7 +135,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="YD0-cC-iKk" secondAttribute="bottom" constant="77" id="7Yq-Hw-Anm" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="YD0-cC-iKk" secondAttribute="bottom" constant="77" id="7Yq-Hw-Anm" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="14"/>
@@ -159,7 +159,7 @@
                             <constraint firstItem="QoP-Be-8w5" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="82" id="Lsz-3m-acT"/>
                             <constraint firstItem="SZs-HX-93N" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="MFf-oG-E15"/>
                             <constraint firstItem="YD0-cC-iKk" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="YEI-21-F11"/>
-                            <constraint firstItem="YD0-cC-iKk" firstAttribute="top" secondItem="XIv-Tl-KHx" secondAttribute="bottom" constant="28" id="aIU-PR-pmu" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="YD0-cC-iKk" firstAttribute="top" secondItem="XIv-Tl-KHx" secondAttribute="bottom" constant="28" id="aIU-PR-pmu" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="12"/>
@@ -181,7 +181,7 @@
                             <constraint firstItem="cTp-8s-U9W" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="fSQ-j3-mni"/>
                             <constraint firstItem="cTp-8s-U9W" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="h7I-zL-YFX"/>
                             <constraint firstItem="b64-8S-743" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="82" id="hJo-JR-qHJ"/>
-                            <constraint firstItem="HZz-NJ-bOv" firstAttribute="top" secondItem="3bR-t2-Aze" secondAttribute="bottom" constant="51" id="ir9-T2-8JO" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="HZz-NJ-bOv" firstAttribute="top" secondItem="3bR-t2-Aze" secondAttribute="bottom" constant="51" id="ir9-T2-8JO" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="25"/>
@@ -202,7 +202,7 @@
                             <constraint firstItem="b64-8S-743" firstAttribute="top" secondItem="QoP-Be-8w5" secondAttribute="bottom" constant="51" id="pYt-yv-cYG"/>
                             <constraint firstItem="SZs-HX-93N" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="t6t-N5-F7c"/>
                             <constraint firstItem="3bR-t2-Aze" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="27" id="xYX-y1-WM4"/>
-                            <constraint firstItem="cTp-8s-U9W" firstAttribute="top" secondItem="b64-8S-743" secondAttribute="bottom" constant="8" id="yjD-ov-cSm" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="cTp-8s-U9W" firstAttribute="top" secondItem="b64-8S-743" secondAttribute="bottom" constant="8" id="yjD-ov-cSm" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="4"/>
@@ -236,7 +236,7 @@
         <!--Info View Controller-->
         <scene sceneID="36d-NR-b5g">
             <objects>
-                <viewController title="Info View Controller" id="aDK-Kb-Zte" customClass="InfoViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Info View Controller" id="aDK-Kb-Zte" customClass="InfoViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qHa-43-HXH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,7 +307,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="X6N-F5-rdU" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" id="2Rm-so-WZ4"/>
-                            <constraint firstItem="gga-er-Bxe" firstAttribute="top" secondItem="X6N-F5-rdU" secondAttribute="bottom" constant="78" id="4QD-Zv-RYz" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="gga-er-Bxe" firstAttribute="top" secondItem="X6N-F5-rdU" secondAttribute="bottom" constant="78" id="4QD-Zv-RYz" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="40"/>
@@ -327,7 +327,7 @@
                             <constraint firstItem="NEO-Au-pIn" firstAttribute="trailing" secondItem="fp4-4u-zIq" secondAttribute="trailing" constant="20" id="BIY-LU-WUQ"/>
                             <constraint firstItem="X6N-F5-rdU" firstAttribute="trailing" secondItem="NEO-Au-pIn" secondAttribute="trailing" id="GGV-z2-Pbh"/>
                             <constraint firstItem="NEO-Au-pIn" firstAttribute="trailing" secondItem="f5f-lC-j1N" secondAttribute="trailing" constant="19" id="H0o-kx-Atn"/>
-                            <constraint firstItem="fp4-4u-zIq" firstAttribute="top" secondItem="f5f-lC-j1N" secondAttribute="bottom" constant="43" id="MJB-yE-td2" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="fp4-4u-zIq" firstAttribute="top" secondItem="f5f-lC-j1N" secondAttribute="bottom" constant="43" id="MJB-yE-td2" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -345,7 +345,7 @@
                             </constraint>
                             <constraint firstItem="fp4-4u-zIq" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" constant="20" id="MiV-ef-OkW"/>
                             <constraint firstItem="NEO-Au-pIn" firstAttribute="trailing" secondItem="9sN-8a-W29" secondAttribute="trailing" constant="32" id="ajU-dU-O3s"/>
-                            <constraint firstItem="X6N-F5-rdU" firstAttribute="top" secondItem="dtX-co-0cf" secondAttribute="bottom" constant="64" id="byR-d0-aeg" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="X6N-F5-rdU" firstAttribute="top" secondItem="dtX-co-0cf" secondAttribute="bottom" constant="64" id="byR-d0-aeg" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -363,7 +363,7 @@
                             </constraint>
                             <constraint firstItem="gga-er-Bxe" firstAttribute="trailing" secondItem="NEO-Au-pIn" secondAttribute="trailing" id="cHm-x9-GYh"/>
                             <constraint firstItem="9sN-8a-W29" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" constant="32" id="dyR-rO-HzU"/>
-                            <constraint firstItem="9sN-8a-W29" firstAttribute="top" secondItem="fp4-4u-zIq" secondAttribute="bottom" constant="39" id="kzb-Iz-2Rw" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="9sN-8a-W29" firstAttribute="top" secondItem="fp4-4u-zIq" secondAttribute="bottom" constant="39" id="kzb-Iz-2Rw" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -379,7 +379,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="NEO-Au-pIn" firstAttribute="bottom" secondItem="9sN-8a-W29" secondAttribute="bottom" constant="45" id="mcM-ES-f3Z" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="NEO-Au-pIn" firstAttribute="bottom" secondItem="9sN-8a-W29" secondAttribute="bottom" constant="45" id="mcM-ES-f3Z" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -411,7 +411,7 @@
         <!--User Agreement View Controller-->
         <scene sceneID="xpq-II-gX8">
             <objects>
-                <viewController id="Woe-6s-zMZ" customClass="UserAgreementViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Woe-6s-zMZ" customClass="UserAgreementViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eyQ-nv-xns">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="7200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -467,7 +467,7 @@
         <!--Profile List View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="ProfileListViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ProfileListViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -796,7 +796,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDx-Ib-g3i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDx-Ib-g3i">
                                 <rect key="frame" x="0.0" y="548" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="6Xb-Jq-ksM"/>
@@ -848,7 +848,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZnD-hy-Gi7" firstAttribute="leading" secondItem="A6D-OM-uJs" secondAttribute="trailing" constant="150" id="0rV-Qm-0R8"/>
-                            <constraint firstItem="awz-zK-GaL" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="19N-hg-kj8" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="awz-zK-GaL" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="19N-hg-kj8" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="438"/>
@@ -864,7 +864,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="geD-TM-9DQ" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="3Vd-55-55O" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="geD-TM-9DQ" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="3Vd-55-55O" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -880,7 +880,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="A6D-OM-uJs" firstAttribute="top" secondItem="v1p-0Y-Gpb" secondAttribute="bottom" constant="48" id="3q9-5s-VSl" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="A6D-OM-uJs" firstAttribute="top" secondItem="v1p-0Y-Gpb" secondAttribute="bottom" constant="48" id="3q9-5s-VSl" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -897,7 +897,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="3T0-P0-nMN" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="60" id="4cL-Mp-GbZ"/>
-                            <constraint firstItem="FDx-Ib-g3i" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="4k3-ek-LGF" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="FDx-Ib-g3i" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="4k3-ek-LGF" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="358"/>
@@ -913,7 +913,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="850-ce-DZm" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="7cY-ip-RDG" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="850-ce-DZm" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="7cY-ip-RDG" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -935,7 +935,7 @@
                             <constraint firstItem="StZ-so-3if" firstAttribute="leading" secondItem="yt8-FP-sGm" secondAttribute="trailing" id="Bkc-9z-wa3"/>
                             <constraint firstItem="850-ce-DZm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="C7r-Yv-AzJ"/>
                             <constraint firstItem="3T0-P0-nMN" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="100" id="D8N-wf-3IP"/>
-                            <constraint firstItem="aPA-ym-1ZP" firstAttribute="top" secondItem="geD-TM-9DQ" secondAttribute="bottom" constant="48" id="DOD-Gk-nnl" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="aPA-ym-1ZP" firstAttribute="top" secondItem="geD-TM-9DQ" secondAttribute="bottom" constant="48" id="DOD-Gk-nnl" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -951,7 +951,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="2W5-tT-zzx" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="Drg-sX-vBQ" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="2W5-tT-zzx" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="Drg-sX-vBQ" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -969,7 +969,7 @@
                             </constraint>
                             <constraint firstItem="awz-zK-GaL" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Feg-YG-voE"/>
                             <constraint firstItem="azG-zF-abb" firstAttribute="leading" secondItem="BM7-U8-dCI" secondAttribute="trailing" id="Fz0-Mu-G3z"/>
-                            <constraint firstItem="eAc-wA-Ep8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="INg-Kl-g4L" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="eAc-wA-Ep8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="INg-Kl-g4L" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="438"/>
@@ -986,7 +986,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="aW9-5K-hCP" firstAttribute="leading" secondItem="v1p-0Y-Gpb" secondAttribute="trailing" constant="150" id="JiA-Yx-htF"/>
-                            <constraint firstItem="4Wk-Gs-eIG" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="K6I-s8-Kfg" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="4Wk-Gs-eIG" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="K6I-s8-Kfg" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="358"/>
@@ -1002,7 +1002,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="ZnD-hy-Gi7" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="Kmv-2p-cQg" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="ZnD-hy-Gi7" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="Kmv-2p-cQg" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="278"/>
@@ -1019,7 +1019,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="2W5-tT-zzx" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Kpb-ot-no9"/>
-                            <constraint firstItem="v1p-0Y-Gpb" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="MQO-sR-zKu" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="v1p-0Y-Gpb" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="MQO-sR-zKu" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -1037,7 +1037,7 @@
                             </constraint>
                             <constraint firstItem="Ojc-Ky-Qe8" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="ODX-xl-iA7"/>
                             <constraint firstItem="YHB-FV-yF0" firstAttribute="leading" secondItem="yt8-FP-sGm" secondAttribute="trailing" constant="75" id="PcF-oC-ZOD"/>
-                            <constraint firstItem="YBY-FM-eqV" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="RUd-oZ-br5" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="YBY-FM-eqV" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="RUd-oZ-br5" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="278"/>
@@ -1055,7 +1055,7 @@
                             </constraint>
                             <constraint firstItem="YBY-FM-eqV" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="TQv-Gb-C9a"/>
                             <constraint firstItem="1YH-1l-pni" firstAttribute="leading" secondItem="BM7-U8-dCI" secondAttribute="trailing" constant="150" id="TYc-9z-qwl"/>
-                            <constraint firstItem="azG-zF-abb" firstAttribute="top" secondItem="aPA-ym-1ZP" secondAttribute="bottom" constant="48" id="Tah-iP-F15" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="azG-zF-abb" firstAttribute="top" secondItem="aPA-ym-1ZP" secondAttribute="bottom" constant="48" id="Tah-iP-F15" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1071,7 +1071,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="yt8-FP-sGm" firstAttribute="top" secondItem="BM7-U8-dCI" secondAttribute="bottom" constant="48" id="WV1-63-1xV" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="yt8-FP-sGm" firstAttribute="top" secondItem="BM7-U8-dCI" secondAttribute="bottom" constant="48" id="WV1-63-1xV" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1091,7 +1091,7 @@
                             <constraint firstItem="qOk-0F-4sI" firstAttribute="leading" secondItem="v1p-0Y-Gpb" secondAttribute="trailing" constant="75" id="Ygg-dk-fej"/>
                             <constraint firstItem="1YH-1l-pni" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="ZdS-Mc-vb2"/>
                             <constraint firstItem="eAc-wA-Ep8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="aKW-4Y-G1D"/>
-                            <constraint firstItem="GoI-8m-pas" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="c9p-eN-R8Y" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="GoI-8m-pas" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="c9p-eN-R8Y" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="218"/>
@@ -1107,7 +1107,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="Ojc-Ky-Qe8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="dwi-mt-Glc" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="Ojc-Ky-Qe8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="dwi-mt-Glc" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="438"/>
@@ -1123,7 +1123,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="N1o-Ih-dna" firstAttribute="top" secondItem="qOk-0F-4sI" secondAttribute="bottom" constant="48" id="fWJ-5Q-0UN" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="N1o-Ih-dna" firstAttribute="top" secondItem="qOk-0F-4sI" secondAttribute="bottom" constant="48" id="fWJ-5Q-0UN" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1145,7 +1145,7 @@
                             <constraint firstItem="aW9-5K-hCP" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="o20-tf-HYX"/>
                             <constraint firstItem="fIu-4m-8RB" firstAttribute="leading" secondItem="BM7-U8-dCI" secondAttribute="trailing" constant="75" id="oNx-Aw-veh"/>
                             <constraint firstItem="yt8-FP-sGm" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="oYa-aK-No6"/>
-                            <constraint firstItem="qOk-0F-4sI" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="rYO-sO-Btt" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="qOk-0F-4sI" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="rYO-sO-Btt" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -1162,7 +1162,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="4Wk-Gs-eIG" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="sW9-V2-dYa"/>
-                            <constraint firstItem="1YH-1l-pni" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="sbQ-CH-hou" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="1YH-1l-pni" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="sbQ-CH-hou" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="358"/>
@@ -1178,7 +1178,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="StZ-so-3if" firstAttribute="top" secondItem="azG-zF-abb" secondAttribute="bottom" constant="48" id="sbT-qJ-iFX" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="StZ-so-3if" firstAttribute="top" secondItem="azG-zF-abb" secondAttribute="bottom" constant="48" id="sbT-qJ-iFX" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1195,7 +1195,8 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="BM7-U8-dCI" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="tfm-eZ-ysE"/>
-                            <constraint firstItem="BM7-U8-dCI" firstAttribute="top" secondItem="A6D-OM-uJs" secondAttribute="bottom" constant="48" id="ur1-UP-Lex" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="FDx-Ib-g3i" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="tzc-1b-fcR"/>
+                            <constraint firstItem="BM7-U8-dCI" firstAttribute="top" secondItem="A6D-OM-uJs" secondAttribute="bottom" constant="48" id="ur1-UP-Lex" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1211,7 +1212,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="fIu-4m-8RB" firstAttribute="top" secondItem="N1o-Ih-dna" secondAttribute="bottom" constant="48" id="vnh-Dg-O8a" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="fIu-4m-8RB" firstAttribute="top" secondItem="N1o-Ih-dna" secondAttribute="bottom" constant="48" id="vnh-Dg-O8a" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1228,7 +1229,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="N1o-Ih-dna" firstAttribute="leading" secondItem="A6D-OM-uJs" secondAttribute="trailing" constant="75" id="vvQ-zn-zrg"/>
-                            <constraint firstItem="aW9-5K-hCP" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="x2x-D3-r1A" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="aW9-5K-hCP" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="x2x-D3-r1A" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -1245,7 +1246,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="GoI-8m-pas" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="yHN-8l-klv"/>
-                            <constraint firstItem="YHB-FV-yF0" firstAttribute="top" secondItem="fIu-4m-8RB" secondAttribute="bottom" constant="48" id="yUH-Ps-PeO" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="YHB-FV-yF0" firstAttribute="top" secondItem="fIu-4m-8RB" secondAttribute="bottom" constant="48" id="yUH-Ps-PeO" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1294,7 +1295,7 @@
         <!--Edit Target View Controller-->
         <scene sceneID="2qU-5F-CQV">
             <objects>
-                <viewController id="dh5-zW-hdZ" customClass="EditTargetViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dh5-zW-hdZ" customClass="EditTargetViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhh-0q-Z2m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1379,7 +1380,7 @@
                         <constraints>
                             <constraint firstItem="Ve2-fz-DGa" firstAttribute="top" secondItem="tNS-OV-AwB" secondAttribute="bottom" constant="8" id="3aO-zW-Fc0"/>
                             <constraint firstItem="wWB-uN-ziZ" firstAttribute="top" secondItem="HFT-Wq-wcx" secondAttribute="bottom" constant="7" id="5uH-9Y-LBK"/>
-                            <constraint firstItem="HFT-Wq-wcx" firstAttribute="top" secondItem="8NM-Fy-fNj" secondAttribute="bottom" constant="88" id="C1Y-fG-3xQ" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="HFT-Wq-wcx" firstAttribute="top" secondItem="8NM-Fy-fNj" secondAttribute="bottom" constant="88" id="C1Y-fG-3xQ" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
                                         <real key="value" value="44"/>
@@ -1395,7 +1396,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="tNS-OV-AwB" firstAttribute="top" secondItem="wWB-uN-ziZ" secondAttribute="bottom" constant="79" id="CqA-OJ-IdV" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="tNS-OV-AwB" firstAttribute="top" secondItem="wWB-uN-ziZ" secondAttribute="bottom" constant="79" id="CqA-OJ-IdV" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="40"/>
@@ -1415,7 +1416,7 @@
                             <constraint firstItem="Ve2-fz-DGa" firstAttribute="leading" secondItem="bwF-jD-cOM" secondAttribute="leading" constant="82" id="Fbw-BP-tDG"/>
                             <constraint firstItem="bwF-jD-cOM" firstAttribute="trailing" secondItem="N7w-27-ygN" secondAttribute="trailing" constant="113" id="FrC-oj-sxJ"/>
                             <constraint firstItem="bwF-jD-cOM" firstAttribute="trailing" secondItem="tNS-OV-AwB" secondAttribute="trailing" constant="112.5" id="Hwl-1h-luF"/>
-                            <constraint firstItem="bwF-jD-cOM" firstAttribute="bottom" secondItem="F9A-41-3yc" secondAttribute="bottom" constant="52" id="Jog-e4-tKz" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="bwF-jD-cOM" firstAttribute="bottom" secondItem="F9A-41-3yc" secondAttribute="bottom" constant="52" id="Jog-e4-tKz" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="35"/>
@@ -1460,7 +1461,7 @@
         <!--EditProfiles1-->
         <scene sceneID="CNw-J2-iMD">
             <objects>
-                <viewController title="EditProfiles1" id="BRs-Xf-Bc3" customClass="EditProfileViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles1" id="BRs-Xf-Bc3" customClass="EditProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="alW-Bg-7FY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1595,7 +1596,7 @@
                             <constraint firstItem="ayn-GA-OhS" firstAttribute="leading" secondItem="alW-Bg-7FY" secondAttribute="leadingMargin" constant="23" id="fBg-tp-RTp"/>
                             <constraint firstItem="Pb8-dB-Clm" firstAttribute="top" secondItem="50A-Tq-sfA" secondAttribute="top" id="g48-FL-4Le"/>
                             <constraint firstItem="nfL-d7-dLd" firstAttribute="leading" secondItem="alW-Bg-7FY" secondAttribute="leadingMargin" constant="45" id="hdE-rQ-WUB"/>
-                            <constraint firstItem="50A-Tq-sfA" firstAttribute="bottom" secondItem="ae8-5A-91H" secondAttribute="bottom" constant="78" id="kMK-aI-9In" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="50A-Tq-sfA" firstAttribute="bottom" secondItem="ae8-5A-91H" secondAttribute="bottom" constant="78" id="kMK-aI-9In" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -1673,7 +1674,7 @@
         <!--EditProfiles2-->
         <scene sceneID="2ca-lS-bZu">
             <objects>
-                <viewController title="EditProfiles2" id="l1a-lY-pv0" customClass="Edit2ProfileViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles2" id="l1a-lY-pv0" customClass="Edit2ProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9U-Qo-XNJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1791,7 +1792,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Cpz-vh-b0U" firstAttribute="bottom" secondItem="bHE-fn-fr1" secondAttribute="bottom" constant="78" id="5RL-0U-dsU" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="Cpz-vh-b0U" firstAttribute="bottom" secondItem="bHE-fn-fr1" secondAttribute="bottom" constant="78" id="5RL-0U-dsU" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -1846,7 +1847,7 @@
         <!--EditProfiles3-->
         <scene sceneID="t5M-AZ-uE7">
             <objects>
-                <viewController title="EditProfiles3" id="slc-zp-7OB" customClass="Edit3ProfileViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles3" id="slc-zp-7OB" customClass="Edit3ProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VEK-2P-Gff">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1982,7 +1983,7 @@
                             <constraint firstItem="Vvn-Jq-0x0" firstAttribute="top" secondItem="Sqs-XQ-JzE" secondAttribute="bottom" constant="302" id="X5r-xU-910"/>
                             <constraint firstItem="V4B-kN-hnm" firstAttribute="trailing" secondItem="Sqs-XQ-JzE" secondAttribute="trailing" constant="69" id="YJt-vS-VCM"/>
                             <constraint firstItem="8DJ-UP-zms" firstAttribute="top" secondItem="Sqs-XQ-JzE" secondAttribute="bottom" constant="148" id="c5x-GR-ahm"/>
-                            <constraint firstItem="V4B-kN-hnm" firstAttribute="bottom" secondItem="FhR-XV-kV7" secondAttribute="bottom" constant="78" id="kk7-xb-W7a" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="V4B-kN-hnm" firstAttribute="bottom" secondItem="FhR-XV-kV7" secondAttribute="bottom" constant="78" id="kk7-xb-W7a" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -2020,7 +2021,7 @@
         <!--EditProfiles4-->
         <scene sceneID="NVc-mg-pBv">
             <objects>
-                <viewController title="EditProfiles4" id="CPd-uN-KEo" customClass="Edit4ProfileViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles4" id="CPd-uN-KEo" customClass="Edit4ProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eej-fP-1Ct">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2148,7 +2149,7 @@
                             <constraint firstItem="6lW-ml-YCl" firstAttribute="top" secondItem="R14-hm-Gh7" secondAttribute="bottom" constant="148" id="HYY-cm-4LV"/>
                             <constraint firstItem="EDY-U3-t7T" firstAttribute="top" secondItem="R14-hm-Gh7" secondAttribute="bottom" constant="241" id="Nve-At-tfw"/>
                             <constraint firstItem="V1M-zH-WuI" firstAttribute="leading" secondItem="8Kl-gI-maV" secondAttribute="leading" constant="45" id="Pfp-uu-HyG"/>
-                            <constraint firstItem="8Kl-gI-maV" firstAttribute="bottom" secondItem="V1M-zH-WuI" secondAttribute="bottom" constant="78" id="RSk-p9-nvW" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="8Kl-gI-maV" firstAttribute="bottom" secondItem="V1M-zH-WuI" secondAttribute="bottom" constant="78" id="RSk-p9-nvW" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
                                         <real key="value" value="30"/>
@@ -2194,7 +2195,7 @@
         <!--Edit Low View Controller-->
         <scene sceneID="CgQ-Ax-YEp">
             <objects>
-                <viewController id="h6z-rb-cyf" customClass="EditLowViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h6z-rb-cyf" customClass="EditLowViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lrm-vL-tDf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2274,7 +2275,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="bottom" secondItem="MVf-M7-B8W" secondAttribute="bottom" constant="52" id="0Xc-fD-tPn" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="bottom" secondItem="MVf-M7-B8W" secondAttribute="bottom" constant="52" id="0Xc-fD-tPn" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="35"/>
@@ -2292,7 +2293,7 @@
                             </constraint>
                             <constraint firstItem="4sa-Zg-Lcr" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="82" id="1pF-I9-qbY"/>
                             <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="MVf-M7-B8W" secondAttribute="trailing" constant="44" id="2BJ-ee-7h7"/>
-                            <constraint firstItem="6pw-Lb-htW" firstAttribute="top" secondItem="saf-Jp-dXi" secondAttribute="bottom" constant="76.5" id="64g-Cp-84j" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="6pw-Lb-htW" firstAttribute="top" secondItem="saf-Jp-dXi" secondAttribute="bottom" constant="76.5" id="64g-Cp-84j" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="15"/>
@@ -2311,7 +2312,7 @@
                             <constraint firstItem="6pw-Lb-htW" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="82" id="8oN-TA-ybu"/>
                             <constraint firstItem="saf-Jp-dXi" firstAttribute="top" secondItem="dMG-gC-hFJ" secondAttribute="top" constant="14" id="E71-ed-zg3"/>
                             <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="cYR-bQ-s5L" secondAttribute="trailing" constant="82" id="KbM-ex-5uW"/>
-                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="wIg-wS-yoZ" secondAttribute="trailing" constant="113.5" id="NEU-60-KmE" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="wIg-wS-yoZ" secondAttribute="trailing" constant="113.5" id="NEU-60-KmE" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="80"/>
@@ -2338,7 +2339,7 @@
                             <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="4sa-Zg-Lcr" secondAttribute="trailing" constant="82" id="sql-dZ-SRL"/>
                             <constraint firstItem="4sa-Zg-Lcr" firstAttribute="top" secondItem="wIg-wS-yoZ" secondAttribute="bottom" constant="8" id="ti9-2I-jzW"/>
                             <constraint firstItem="cYR-bQ-s5L" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="82" id="uOM-K8-BQg"/>
-                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="top" secondItem="cYR-bQ-s5L" secondAttribute="bottom" constant="79" id="vCK-LQ-dTJ" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="top" secondItem="cYR-bQ-s5L" secondAttribute="bottom" constant="79" id="vCK-LQ-dTJ" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="22"/>
@@ -2354,7 +2355,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="113" id="vbl-rt-f3i" customClass="NSLayoutHelper" customModule="DiabetesCalculatorv2" customModuleProvider="target">
+                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="113" id="vbl-rt-f3i" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="80"/>
@@ -2406,7 +2407,7 @@
         <!--Privacy Policy View Controller-->
         <scene sceneID="iUt-4O-Ead">
             <objects>
-                <viewController id="klF-eW-NGz" customClass="PrivacyPolicyViewController" customModule="DiabetesCalculatorv2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="klF-eW-NGz" customClass="PrivacyPolicyViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C3O-q2-ePn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="9500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2417,8 +2418,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3p-Bd-STr">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="9600"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Privacy Policy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-KL-k3j">
-                                                <rect key="frame" x="8" y="0.0" width="398" height="9600"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-KL-k3j">
+                                                <rect key="frame" x="8" y="0.0" width="398" height="22"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2427,6 +2428,8 @@
                                         <color key="backgroundColor" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="9600" id="0Pf-Ua-E5w"/>
+                                            <constraint firstItem="ccu-KL-k3j" firstAttribute="top" secondItem="T3p-Bd-STr" secondAttribute="top" id="dQn-Z6-Uj0"/>
+                                            <constraint firstItem="ccu-KL-k3j" firstAttribute="leading" secondItem="T3p-Bd-STr" secondAttribute="leading" constant="8" id="vtc-ZK-CQF"/>
                                         </constraints>
                                     </view>
                                 </subviews>
