@@ -77,7 +77,7 @@ class CalculateViewController: UIViewController {
                 outputDisplay.text = "Low, Consume Carbs"
             }
             else if(output<0){
-                outputDisplay.text = "Insulin Not Recommended (Negative Dose)"
+                outputDisplay.text = "Insulin Not Recommended"
             }
             else{
             outputFormatted = String(format: "%.1f", output)
@@ -122,13 +122,6 @@ class CalculateViewController: UIViewController {
         currentNameLabel.text = currentName
         
         
-        
-        let screenSize: CGRect = UIScreen.main.bounds
-        
-        let screenWidth = screenSize.width
-        let screenHeight = screenSize.height
-        
-        print("Screen width = \(screenWidth), screen height = \(screenHeight)")
     }
     
   

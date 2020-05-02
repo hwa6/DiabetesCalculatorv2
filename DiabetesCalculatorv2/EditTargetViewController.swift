@@ -17,17 +17,6 @@ class EditTargetViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        let screenSize: CGRect = UIScreen.main.bounds
-        if(screenSize.height>800){
-            print("XR")
-        }
-        else{
-            print("small phone")
-        }
-        
-        
-        
-        
         self.navigationController?.navigationBar.isHidden = false
         self.hideKeyboardOnTap()
         super.viewWillAppear(true)

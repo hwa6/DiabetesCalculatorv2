@@ -71,6 +71,28 @@ class ProfileListViewController: UIViewController{
         self.profile4name.text = passed4DataString
         self.cf4name.text = String (passed4CFString)
         self.cr4name.text = String (passed4CRString)
+        
+        //sets active index highlighted
+        for i in 1 ... 4 {
+            if(EditProfileViewController.GlobalVariable.activeIndex == i){
+                if (i == 1){
+                    outline1.layer.borderWidth = 2
+                    outline1.layer.borderColor = UIColor.systemGray.cgColor
+                }
+                else if (i == 2){
+                    outline2.layer.borderWidth = 2
+                    outline2.layer.borderColor = UIColor.systemGray.cgColor
+                }
+                else if (i == 3){
+                    outline3.layer.borderWidth = 2
+                    outline3.layer.borderColor = UIColor.systemGray.cgColor
+                }
+                else if (i == 4){
+                    outline4.layer.borderWidth = 2
+                    outline4.layer.borderColor = UIColor.systemGray.cgColor
+                }
+            }
+        }
     }
     
     //buttons to select active profile
@@ -82,6 +104,8 @@ class ProfileListViewController: UIViewController{
         outline3.layer.borderWidth = 0
         outline4.layer.borderWidth = 0
         EditProfileViewController.GlobalVariable.activeIndex=1
+        UserDefaults.standard.set(EditProfileViewController.GlobalVariable.activeIndex, forKey: "savedIndex")
+        UserDefaults.standard.synchronize()
     }
     @IBAction func makeSecondActive(_ sender: UIButton) {
         outline2.layer.borderWidth = 2
@@ -90,6 +114,8 @@ class ProfileListViewController: UIViewController{
         outline3.layer.borderWidth = 0
         outline4.layer.borderWidth = 0
         EditProfileViewController.GlobalVariable.activeIndex=2
+        UserDefaults.standard.set(EditProfileViewController.GlobalVariable.activeIndex, forKey: "savedIndex")
+        UserDefaults.standard.synchronize()
     }
     
     @IBAction func makeThirdActive(_ sender: UIButton) {
@@ -99,6 +125,8 @@ class ProfileListViewController: UIViewController{
         outline2.layer.borderWidth = 0
         outline4.layer.borderWidth = 0
         EditProfileViewController.GlobalVariable.activeIndex=3
+        UserDefaults.standard.set(EditProfileViewController.GlobalVariable.activeIndex, forKey: "savedIndex")
+        UserDefaults.standard.synchronize()
     }
     @IBAction func makeFourthActive(_ sender: UIButton) {
         outline4.layer.borderWidth = 2
@@ -107,6 +135,8 @@ class ProfileListViewController: UIViewController{
         outline2.layer.borderWidth = 0
         outline3.layer.borderWidth = 0
         EditProfileViewController.GlobalVariable.activeIndex=4
+        UserDefaults.standard.set(EditProfileViewController.GlobalVariable.activeIndex, forKey: "savedIndex")
+        UserDefaults.standard.synchronize()
     }
     
     
