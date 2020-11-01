@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Calculate-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="CalculateViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="CalculateViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,6 +49,11 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-NJ-bOv">
                                 <rect key="frame" x="0.0" y="183" width="414" height="20"/>
@@ -80,6 +87,11 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTp-8s-U9W">
                                 <rect key="frame" x="0.0" y="509" width="414" height="35"/>
@@ -100,10 +112,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3bR-t2-Aze" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="1CT-jv-gjO"/>
-                            <constraint firstItem="SZs-HX-93N" firstAttribute="top" secondItem="QoP-Be-8w5" secondAttribute="bottom" constant="8" id="1sQ-er-A9S" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="SZs-HX-93N" firstAttribute="top" secondItem="QoP-Be-8w5" secondAttribute="bottom" constant="8" id="1sQ-er-A9S" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="4"/>
@@ -119,7 +132,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="QoP-Be-8w5" firstAttribute="top" secondItem="HZz-NJ-bOv" secondAttribute="bottom" constant="97" id="60K-xF-hPk" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="QoP-Be-8w5" firstAttribute="top" secondItem="HZz-NJ-bOv" secondAttribute="bottom" constant="97" id="60K-xF-hPk" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="45"/>
@@ -135,7 +148,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="YD0-cC-iKk" secondAttribute="bottom" constant="77" id="7Yq-Hw-Anm" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="YD0-cC-iKk" secondAttribute="bottom" constant="77" id="7Yq-Hw-Anm" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="14"/>
@@ -159,7 +172,7 @@
                             <constraint firstItem="QoP-Be-8w5" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="82" id="Lsz-3m-acT"/>
                             <constraint firstItem="SZs-HX-93N" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="MFf-oG-E15"/>
                             <constraint firstItem="YD0-cC-iKk" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="YEI-21-F11"/>
-                            <constraint firstItem="YD0-cC-iKk" firstAttribute="top" secondItem="XIv-Tl-KHx" secondAttribute="bottom" constant="28" id="aIU-PR-pmu" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="YD0-cC-iKk" firstAttribute="top" secondItem="XIv-Tl-KHx" secondAttribute="bottom" constant="28" id="aIU-PR-pmu" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="12"/>
@@ -181,7 +194,7 @@
                             <constraint firstItem="cTp-8s-U9W" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="fSQ-j3-mni"/>
                             <constraint firstItem="cTp-8s-U9W" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="h7I-zL-YFX"/>
                             <constraint firstItem="b64-8S-743" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="82" id="hJo-JR-qHJ"/>
-                            <constraint firstItem="HZz-NJ-bOv" firstAttribute="top" secondItem="3bR-t2-Aze" secondAttribute="bottom" constant="51" id="ir9-T2-8JO" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="HZz-NJ-bOv" firstAttribute="top" secondItem="3bR-t2-Aze" secondAttribute="bottom" constant="51" id="ir9-T2-8JO" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="25"/>
@@ -202,7 +215,7 @@
                             <constraint firstItem="b64-8S-743" firstAttribute="top" secondItem="QoP-Be-8w5" secondAttribute="bottom" constant="51" id="pYt-yv-cYG"/>
                             <constraint firstItem="SZs-HX-93N" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="t6t-N5-F7c"/>
                             <constraint firstItem="3bR-t2-Aze" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="27" id="xYX-y1-WM4"/>
-                            <constraint firstItem="cTp-8s-U9W" firstAttribute="top" secondItem="b64-8S-743" secondAttribute="bottom" constant="8" id="yjD-ov-cSm" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="cTp-8s-U9W" firstAttribute="top" secondItem="b64-8S-743" secondAttribute="bottom" constant="8" id="yjD-ov-cSm" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="4"/>
@@ -219,7 +232,6 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calculate" image="pencil" catalog="system" largeContentSizeImage="pencil" id="acW-dT-cKf"/>
                     <connections>
@@ -236,7 +248,7 @@
         <!--Info View Controller-->
         <scene sceneID="36d-NR-b5g">
             <objects>
-                <viewController title="Info View Controller" id="aDK-Kb-Zte" customClass="InfoViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Info View Controller" id="aDK-Kb-Zte" customClass="InfoViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qHa-43-HXH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,13 +281,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed &amp; Designed by                       Henry Anderson and Nicole Miller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp4-4u-zIq">
-                                <rect key="frame" x="20" y="619" width="374" height="55"/>
+                                <rect key="frame" x="20" y="619.66666666666663" width="374" height="54.666666666666629"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabetes Calculator is designed to help type 1 diabetes patients calculate their insulin dosage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5f-lC-j1N">
-                                <rect key="frame" x="20" y="481" width="375" height="95"/>
+                                <rect key="frame" x="20" y="481.66666666666674" width="375" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="95" id="3aX-DY-8z9"/>
                                 </constraints>
@@ -298,16 +310,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020 Henry Anderson. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sN-8a-W29">
-                                <rect key="frame" x="32" y="713" width="350" height="55"/>
+                                <rect key="frame" x="32" y="713.33333333333337" width="350" height="54.666666666666629"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NEO-Au-pIn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="X6N-F5-rdU" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" id="2Rm-so-WZ4"/>
-                            <constraint firstItem="gga-er-Bxe" firstAttribute="top" secondItem="X6N-F5-rdU" secondAttribute="bottom" constant="78" id="4QD-Zv-RYz" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="gga-er-Bxe" firstAttribute="top" secondItem="X6N-F5-rdU" secondAttribute="bottom" constant="78" id="4QD-Zv-RYz" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="40"/>
@@ -327,7 +340,7 @@
                             <constraint firstItem="NEO-Au-pIn" firstAttribute="trailing" secondItem="fp4-4u-zIq" secondAttribute="trailing" constant="20" id="BIY-LU-WUQ"/>
                             <constraint firstItem="X6N-F5-rdU" firstAttribute="trailing" secondItem="NEO-Au-pIn" secondAttribute="trailing" id="GGV-z2-Pbh"/>
                             <constraint firstItem="NEO-Au-pIn" firstAttribute="trailing" secondItem="f5f-lC-j1N" secondAttribute="trailing" constant="19" id="H0o-kx-Atn"/>
-                            <constraint firstItem="fp4-4u-zIq" firstAttribute="top" secondItem="f5f-lC-j1N" secondAttribute="bottom" constant="43" id="MJB-yE-td2" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="fp4-4u-zIq" firstAttribute="top" secondItem="f5f-lC-j1N" secondAttribute="bottom" constant="43" id="MJB-yE-td2" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -345,7 +358,7 @@
                             </constraint>
                             <constraint firstItem="fp4-4u-zIq" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" constant="20" id="MiV-ef-OkW"/>
                             <constraint firstItem="NEO-Au-pIn" firstAttribute="trailing" secondItem="9sN-8a-W29" secondAttribute="trailing" constant="32" id="ajU-dU-O3s"/>
-                            <constraint firstItem="X6N-F5-rdU" firstAttribute="top" secondItem="dtX-co-0cf" secondAttribute="bottom" constant="64" id="byR-d0-aeg" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="X6N-F5-rdU" firstAttribute="top" secondItem="dtX-co-0cf" secondAttribute="bottom" constant="64" id="byR-d0-aeg" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -363,7 +376,7 @@
                             </constraint>
                             <constraint firstItem="gga-er-Bxe" firstAttribute="trailing" secondItem="NEO-Au-pIn" secondAttribute="trailing" id="cHm-x9-GYh"/>
                             <constraint firstItem="9sN-8a-W29" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" constant="32" id="dyR-rO-HzU"/>
-                            <constraint firstItem="9sN-8a-W29" firstAttribute="top" secondItem="fp4-4u-zIq" secondAttribute="bottom" constant="39" id="kzb-Iz-2Rw" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="9sN-8a-W29" firstAttribute="top" secondItem="fp4-4u-zIq" secondAttribute="bottom" constant="39" id="kzb-Iz-2Rw" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -379,7 +392,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="NEO-Au-pIn" firstAttribute="bottom" secondItem="9sN-8a-W29" secondAttribute="bottom" constant="45" id="mcM-ES-f3Z" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="NEO-Au-pIn" firstAttribute="bottom" secondItem="9sN-8a-W29" secondAttribute="bottom" constant="45" id="mcM-ES-f3Z" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -400,7 +413,6 @@
                             <constraint firstItem="f5f-lC-j1N" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" constant="20" id="u5N-by-48D"/>
                             <constraint firstItem="gga-er-Bxe" firstAttribute="leading" secondItem="NEO-Au-pIn" secondAttribute="leading" id="ww5-QK-Qiy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="NEO-Au-pIn"/>
                     </view>
                     <navigationItem key="navigationItem" id="IMs-yB-1SJ"/>
                 </viewController>
@@ -411,7 +423,7 @@
         <!--User Agreement View Controller-->
         <scene sceneID="xpq-II-gX8">
             <objects>
-                <viewController id="Woe-6s-zMZ" customClass="UserAgreementViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Woe-6s-zMZ" customClass="UserAgreementViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eyQ-nv-xns">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="7200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -445,14 +457,14 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qpR-1D-9ON"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BTo-Fn-TbP" firstAttribute="top" secondItem="eyQ-nv-xns" secondAttribute="top" id="KVZ-mj-85b"/>
                             <constraint firstItem="BTo-Fn-TbP" firstAttribute="trailing" secondItem="qpR-1D-9ON" secondAttribute="trailing" id="kvW-gI-lkY"/>
                             <constraint firstAttribute="bottom" secondItem="BTo-Fn-TbP" secondAttribute="bottom" id="rhK-ud-K5q"/>
                             <constraint firstItem="BTo-Fn-TbP" firstAttribute="leading" secondItem="qpR-1D-9ON" secondAttribute="leading" id="xVU-YX-toQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="qpR-1D-9ON"/>
                     </view>
                     <navigationItem key="navigationItem" id="zqf-7C-C5G"/>
                     <size key="freeformSize" width="414" height="7200"/>
@@ -467,7 +479,7 @@
         <!--Profile List View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="ProfileListViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ProfileListViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -661,7 +673,7 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="850-ce-DZm" userLabel="Button1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="850-ce-DZm" userLabel="Button1">
                                 <rect key="frame" x="0.0" y="292" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="5GX-QS-tzT"/>
@@ -672,7 +684,7 @@
                                     <action selector="makeFirstActive:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="AXd-xd-nRn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoI-8m-pas" userLabel="Button2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoI-8m-pas" userLabel="Button2">
                                 <rect key="frame" x="0.0" y="420" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Hdh-fU-q7M"/>
@@ -683,7 +695,7 @@
                                     <action selector="makeSecondActive:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3TZ-Nn-NhJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wk-Gs-eIG" userLabel="Button3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wk-Gs-eIG" userLabel="Button3">
                                 <rect key="frame" x="0.0" y="548" width="300" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Emj-p9-ckJ"/>
@@ -694,7 +706,7 @@
                                     <action selector="makeThirdActive:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5bQ-NS-bjb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAc-wA-Ep8" userLabel="Button4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAc-wA-Ep8" userLabel="Button4">
                                 <rect key="frame" x="0.0" y="676" width="299" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="5s8-cS-c0F"/>
@@ -775,7 +787,7 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7f-Yo-giT">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7f-Yo-giT">
                                 <rect key="frame" x="341" y="134" width="32" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -833,7 +845,7 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLC-AZ-MJ5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLC-AZ-MJ5">
                                 <rect key="frame" x="341" y="179" width="32" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -845,10 +857,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZnD-hy-Gi7" firstAttribute="leading" secondItem="A6D-OM-uJs" secondAttribute="trailing" constant="150" id="0rV-Qm-0R8"/>
-                            <constraint firstItem="awz-zK-GaL" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="19N-hg-kj8" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="awz-zK-GaL" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="19N-hg-kj8" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="438"/>
@@ -864,7 +877,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="geD-TM-9DQ" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="3Vd-55-55O" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="geD-TM-9DQ" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="3Vd-55-55O" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -880,7 +893,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="A6D-OM-uJs" firstAttribute="top" secondItem="v1p-0Y-Gpb" secondAttribute="bottom" constant="48" id="3q9-5s-VSl" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="A6D-OM-uJs" firstAttribute="top" secondItem="v1p-0Y-Gpb" secondAttribute="bottom" constant="48" id="3q9-5s-VSl" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -897,7 +910,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="3T0-P0-nMN" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="60" id="4cL-Mp-GbZ"/>
-                            <constraint firstItem="FDx-Ib-g3i" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="4k3-ek-LGF" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="FDx-Ib-g3i" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="4k3-ek-LGF" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="358"/>
@@ -913,7 +926,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="850-ce-DZm" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="7cY-ip-RDG" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="850-ce-DZm" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="7cY-ip-RDG" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -935,7 +948,7 @@
                             <constraint firstItem="StZ-so-3if" firstAttribute="leading" secondItem="yt8-FP-sGm" secondAttribute="trailing" id="Bkc-9z-wa3"/>
                             <constraint firstItem="850-ce-DZm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="C7r-Yv-AzJ"/>
                             <constraint firstItem="3T0-P0-nMN" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="100" id="D8N-wf-3IP"/>
-                            <constraint firstItem="aPA-ym-1ZP" firstAttribute="top" secondItem="geD-TM-9DQ" secondAttribute="bottom" constant="48" id="DOD-Gk-nnl" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="aPA-ym-1ZP" firstAttribute="top" secondItem="geD-TM-9DQ" secondAttribute="bottom" constant="48" id="DOD-Gk-nnl" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -951,7 +964,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="2W5-tT-zzx" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="Drg-sX-vBQ" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="2W5-tT-zzx" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="Drg-sX-vBQ" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -969,7 +982,7 @@
                             </constraint>
                             <constraint firstItem="awz-zK-GaL" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Feg-YG-voE"/>
                             <constraint firstItem="azG-zF-abb" firstAttribute="leading" secondItem="BM7-U8-dCI" secondAttribute="trailing" id="Fz0-Mu-G3z"/>
-                            <constraint firstItem="eAc-wA-Ep8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="INg-Kl-g4L" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="eAc-wA-Ep8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="INg-Kl-g4L" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="438"/>
@@ -986,7 +999,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="aW9-5K-hCP" firstAttribute="leading" secondItem="v1p-0Y-Gpb" secondAttribute="trailing" constant="150" id="JiA-Yx-htF"/>
-                            <constraint firstItem="4Wk-Gs-eIG" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="K6I-s8-Kfg" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="4Wk-Gs-eIG" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="K6I-s8-Kfg" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="358"/>
@@ -1002,7 +1015,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="ZnD-hy-Gi7" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="Kmv-2p-cQg" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="ZnD-hy-Gi7" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="Kmv-2p-cQg" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="278"/>
@@ -1019,7 +1032,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="2W5-tT-zzx" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Kpb-ot-no9"/>
-                            <constraint firstItem="v1p-0Y-Gpb" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="MQO-sR-zKu" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="v1p-0Y-Gpb" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="MQO-sR-zKu" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -1037,7 +1050,7 @@
                             </constraint>
                             <constraint firstItem="Ojc-Ky-Qe8" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="ODX-xl-iA7"/>
                             <constraint firstItem="YHB-FV-yF0" firstAttribute="leading" secondItem="yt8-FP-sGm" secondAttribute="trailing" constant="75" id="PcF-oC-ZOD"/>
-                            <constraint firstItem="YBY-FM-eqV" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="RUd-oZ-br5" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="YBY-FM-eqV" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="RUd-oZ-br5" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="278"/>
@@ -1055,7 +1068,7 @@
                             </constraint>
                             <constraint firstItem="YBY-FM-eqV" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="TQv-Gb-C9a"/>
                             <constraint firstItem="1YH-1l-pni" firstAttribute="leading" secondItem="BM7-U8-dCI" secondAttribute="trailing" constant="150" id="TYc-9z-qwl"/>
-                            <constraint firstItem="azG-zF-abb" firstAttribute="top" secondItem="aPA-ym-1ZP" secondAttribute="bottom" constant="48" id="Tah-iP-F15" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="azG-zF-abb" firstAttribute="top" secondItem="aPA-ym-1ZP" secondAttribute="bottom" constant="48" id="Tah-iP-F15" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1071,7 +1084,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="yt8-FP-sGm" firstAttribute="top" secondItem="BM7-U8-dCI" secondAttribute="bottom" constant="48" id="WV1-63-1xV" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="yt8-FP-sGm" firstAttribute="top" secondItem="BM7-U8-dCI" secondAttribute="bottom" constant="48" id="WV1-63-1xV" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1091,7 +1104,7 @@
                             <constraint firstItem="qOk-0F-4sI" firstAttribute="leading" secondItem="v1p-0Y-Gpb" secondAttribute="trailing" constant="75" id="Ygg-dk-fej"/>
                             <constraint firstItem="1YH-1l-pni" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="ZdS-Mc-vb2"/>
                             <constraint firstItem="eAc-wA-Ep8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="aKW-4Y-G1D"/>
-                            <constraint firstItem="GoI-8m-pas" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="c9p-eN-R8Y" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="GoI-8m-pas" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="320" id="c9p-eN-R8Y" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="218"/>
@@ -1107,7 +1120,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="Ojc-Ky-Qe8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="dwi-mt-Glc" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="Ojc-Ky-Qe8" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="576" id="dwi-mt-Glc" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="438"/>
@@ -1123,7 +1136,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="N1o-Ih-dna" firstAttribute="top" secondItem="qOk-0F-4sI" secondAttribute="bottom" constant="48" id="fWJ-5Q-0UN" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="N1o-Ih-dna" firstAttribute="top" secondItem="qOk-0F-4sI" secondAttribute="bottom" constant="48" id="fWJ-5Q-0UN" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1145,7 +1158,7 @@
                             <constraint firstItem="aW9-5K-hCP" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="o20-tf-HYX"/>
                             <constraint firstItem="fIu-4m-8RB" firstAttribute="leading" secondItem="BM7-U8-dCI" secondAttribute="trailing" constant="75" id="oNx-Aw-veh"/>
                             <constraint firstItem="yt8-FP-sGm" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="oYa-aK-No6"/>
-                            <constraint firstItem="qOk-0F-4sI" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="rYO-sO-Btt" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="qOk-0F-4sI" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="rYO-sO-Btt" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -1162,7 +1175,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="4Wk-Gs-eIG" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="sW9-V2-dYa"/>
-                            <constraint firstItem="1YH-1l-pni" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="sbQ-CH-hou" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="1YH-1l-pni" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="448" id="sbQ-CH-hou" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="358"/>
@@ -1178,7 +1191,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="StZ-so-3if" firstAttribute="top" secondItem="azG-zF-abb" secondAttribute="bottom" constant="48" id="sbT-qJ-iFX" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="StZ-so-3if" firstAttribute="top" secondItem="azG-zF-abb" secondAttribute="bottom" constant="48" id="sbT-qJ-iFX" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1196,7 +1209,7 @@
                             </constraint>
                             <constraint firstItem="BM7-U8-dCI" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="tfm-eZ-ysE"/>
                             <constraint firstItem="FDx-Ib-g3i" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="tzc-1b-fcR"/>
-                            <constraint firstItem="BM7-U8-dCI" firstAttribute="top" secondItem="A6D-OM-uJs" secondAttribute="bottom" constant="48" id="ur1-UP-Lex" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="BM7-U8-dCI" firstAttribute="top" secondItem="A6D-OM-uJs" secondAttribute="bottom" constant="48" id="ur1-UP-Lex" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1212,7 +1225,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="fIu-4m-8RB" firstAttribute="top" secondItem="N1o-Ih-dna" secondAttribute="bottom" constant="48" id="vnh-Dg-O8a" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="fIu-4m-8RB" firstAttribute="top" secondItem="N1o-Ih-dna" secondAttribute="bottom" constant="48" id="vnh-Dg-O8a" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1229,7 +1242,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="N1o-Ih-dna" firstAttribute="leading" secondItem="A6D-OM-uJs" secondAttribute="trailing" constant="75" id="vvQ-zn-zrg"/>
-                            <constraint firstItem="aW9-5K-hCP" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="x2x-D3-r1A" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="aW9-5K-hCP" firstAttribute="top" secondItem="3T0-P0-nMN" secondAttribute="bottom" constant="192" id="x2x-D3-r1A" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="198"/>
@@ -1246,7 +1259,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="GoI-8m-pas" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="yHN-8l-klv"/>
-                            <constraint firstItem="YHB-FV-yF0" firstAttribute="top" secondItem="fIu-4m-8RB" secondAttribute="bottom" constant="48" id="yUH-Ps-PeO" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="YHB-FV-yF0" firstAttribute="top" secondItem="fIu-4m-8RB" secondAttribute="bottom" constant="48" id="yUH-Ps-PeO" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="0.0"/>
@@ -1264,7 +1277,6 @@
                             </constraint>
                             <constraint firstItem="v1p-0Y-Gpb" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="zvX-Ti-nPf"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" id="mCR-Di-VAY"/>
                     <connections>
@@ -1295,7 +1307,7 @@
         <!--Edit Target View Controller-->
         <scene sceneID="2qU-5F-CQV">
             <objects>
-                <viewController id="dh5-zW-hdZ" customClass="EditTargetViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dh5-zW-hdZ" customClass="EditTargetViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhh-0q-Z2m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1347,6 +1359,11 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Target" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFT-Wq-wcx">
                                 <rect key="frame" x="82" y="240" width="250" height="45"/>
@@ -1367,7 +1384,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Target" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNS-OV-AwB">
-                                <rect key="frame" x="114" y="446" width="187.5" height="45"/>
+                                <rect key="frame" x="113.99999999999999" y="446" width="187.66666666666663" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Lb4-CU-Qf7"/>
                                 </constraints>
@@ -1376,11 +1393,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bwF-jD-cOM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ve2-fz-DGa" firstAttribute="top" secondItem="tNS-OV-AwB" secondAttribute="bottom" constant="8" id="3aO-zW-Fc0"/>
                             <constraint firstItem="wWB-uN-ziZ" firstAttribute="top" secondItem="HFT-Wq-wcx" secondAttribute="bottom" constant="7" id="5uH-9Y-LBK"/>
-                            <constraint firstItem="HFT-Wq-wcx" firstAttribute="top" secondItem="8NM-Fy-fNj" secondAttribute="bottom" constant="88" id="C1Y-fG-3xQ" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="HFT-Wq-wcx" firstAttribute="top" secondItem="8NM-Fy-fNj" secondAttribute="bottom" constant="88" id="C1Y-fG-3xQ" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
                                         <real key="value" value="44"/>
@@ -1396,7 +1414,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="tNS-OV-AwB" firstAttribute="top" secondItem="wWB-uN-ziZ" secondAttribute="bottom" constant="79" id="CqA-OJ-IdV" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="tNS-OV-AwB" firstAttribute="top" secondItem="wWB-uN-ziZ" secondAttribute="bottom" constant="79" id="CqA-OJ-IdV" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="40"/>
@@ -1416,7 +1434,7 @@
                             <constraint firstItem="Ve2-fz-DGa" firstAttribute="leading" secondItem="bwF-jD-cOM" secondAttribute="leading" constant="82" id="Fbw-BP-tDG"/>
                             <constraint firstItem="bwF-jD-cOM" firstAttribute="trailing" secondItem="N7w-27-ygN" secondAttribute="trailing" constant="113" id="FrC-oj-sxJ"/>
                             <constraint firstItem="bwF-jD-cOM" firstAttribute="trailing" secondItem="tNS-OV-AwB" secondAttribute="trailing" constant="112.5" id="Hwl-1h-luF"/>
-                            <constraint firstItem="bwF-jD-cOM" firstAttribute="bottom" secondItem="F9A-41-3yc" secondAttribute="bottom" constant="52" id="Jog-e4-tKz" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="bwF-jD-cOM" firstAttribute="bottom" secondItem="F9A-41-3yc" secondAttribute="bottom" constant="52" id="Jog-e4-tKz" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="35"/>
@@ -1445,7 +1463,6 @@
                             <constraint firstItem="tNS-OV-AwB" firstAttribute="leading" secondItem="bwF-jD-cOM" secondAttribute="leading" constant="114" id="upo-ep-AQN"/>
                             <constraint firstItem="wWB-uN-ziZ" firstAttribute="leading" secondItem="bwF-jD-cOM" secondAttribute="leading" constant="82" id="wMd-5p-Qfp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bwF-jD-cOM"/>
                     </view>
                     <navigationItem key="navigationItem" id="HXc-4w-Ebs"/>
                     <connections>
@@ -1461,7 +1478,7 @@
         <!--EditProfiles1-->
         <scene sceneID="CNw-J2-iMD">
             <objects>
-                <viewController title="EditProfiles1" id="BRs-Xf-Bc3" customClass="EditProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles1" id="BRs-Xf-Bc3" customClass="EditProfileViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="alW-Bg-7FY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1496,7 +1513,7 @@
                                 </connections>
                             </button>
                             <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correction Factor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScD-At-7n0">
-                                <rect key="frame" x="3" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="3" y="311" width="187.66666666666666" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="C58-w9-2Tx"/>
                                     <constraint firstAttribute="width" constant="187.66999999999999" id="ovw-Mk-Egf"/>
@@ -1506,7 +1523,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrate             Ratio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xON-Re-sNe">
-                                <rect key="frame" x="206" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="206" y="311" width="187.66666666666663" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="ISy-zz-gBE"/>
                                     <constraint firstAttribute="width" constant="187.66999999999999" id="OVz-ay-Wp1"/>
@@ -1515,7 +1532,7 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayn-GA-OhS">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayn-GA-OhS">
                                 <rect key="frame" x="43" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1525,8 +1542,13 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZn-Lc-zmn">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZn-Lc-zmn">
                                 <rect key="frame" x="242" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1536,9 +1558,14 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-tg-h9H">
-                                <rect key="frame" x="116.5" y="230" width="181" height="53"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-tg-h9H">
+                                <rect key="frame" x="116.66666666666669" y="230" width="181" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="53" id="IoT-dW-mEG"/>
@@ -1548,6 +1575,11 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="alphabet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb8-dB-Clm">
                                 <rect key="frame" x="70" y="88" width="275" height="75"/>
@@ -1569,7 +1601,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWI-jt-Vq7">
-                                <rect key="frame" x="133" y="187" width="148.5" height="35"/>
+                                <rect key="frame" x="132.66666666666669" y="187" width="148.66666666666669" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="qXZ-TT-vIv"/>
                                     <constraint firstAttribute="width" constant="148.5" id="tiy-03-Kph"/>
@@ -1579,7 +1611,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="50A-Tq-sfA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="50A-Tq-sfA" firstAttribute="trailing" secondItem="Pb8-dB-Clm" secondAttribute="trailing" constant="69" id="0J9-Ij-dJr"/>
                             <constraint firstItem="xON-Re-sNe" firstAttribute="top" secondItem="i5i-tg-h9H" secondAttribute="bottom" constant="28" id="18G-UB-IpP"/>
@@ -1596,7 +1629,7 @@
                             <constraint firstItem="ayn-GA-OhS" firstAttribute="leading" secondItem="alW-Bg-7FY" secondAttribute="leadingMargin" constant="23" id="fBg-tp-RTp"/>
                             <constraint firstItem="Pb8-dB-Clm" firstAttribute="top" secondItem="50A-Tq-sfA" secondAttribute="top" id="g48-FL-4Le"/>
                             <constraint firstItem="nfL-d7-dLd" firstAttribute="leading" secondItem="alW-Bg-7FY" secondAttribute="leadingMargin" constant="45" id="hdE-rQ-WUB"/>
-                            <constraint firstItem="50A-Tq-sfA" firstAttribute="bottom" secondItem="ae8-5A-91H" secondAttribute="bottom" constant="78" id="kMK-aI-9In" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="50A-Tq-sfA" firstAttribute="bottom" secondItem="ae8-5A-91H" secondAttribute="bottom" constant="78" id="kMK-aI-9In" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -1619,7 +1652,6 @@
                             <constraint firstItem="nfL-d7-dLd" firstAttribute="top" secondItem="Pb8-dB-Clm" secondAttribute="bottom" constant="302" id="xq2-UV-nHd"/>
                             <constraint firstItem="ScD-At-7n0" firstAttribute="leading" secondItem="alW-Bg-7FY" secondAttribute="leading" constant="3" id="xwj-62-Ubz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="50A-Tq-sfA"/>
                     </view>
                     <navigationItem key="navigationItem" id="Whx-HS-s1t"/>
                     <connections>
@@ -1674,7 +1706,7 @@
         <!--EditProfiles2-->
         <scene sceneID="2ca-lS-bZu">
             <objects>
-                <viewController title="EditProfiles2" id="l1a-lY-pv0" customClass="Edit2ProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles2" id="l1a-lY-pv0" customClass="Edit2ProfileViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9U-Qo-XNJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1709,7 +1741,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correction Factor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZg-2s-MDv">
-                                <rect key="frame" x="3" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="3" y="311" width="187.66666666666666" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="YgU-bH-byX"/>
                                     <constraint firstAttribute="width" constant="187.66999999999999" id="iCz-9P-FbE"/>
@@ -1719,7 +1751,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrate             Ratio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po5-7b-fMu">
-                                <rect key="frame" x="206" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="206" y="311" width="187.66666666666663" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="00H-57-vNd"/>
                                     <constraint firstAttribute="width" constant="187.66999999999999" id="mbN-Lh-TtR"/>
@@ -1728,7 +1760,7 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqg-rR-0Xb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqg-rR-0Xb">
                                 <rect key="frame" x="43" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1738,8 +1770,13 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwz-YD-Inq">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwz-YD-Inq">
                                 <rect key="frame" x="242" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1749,8 +1786,13 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWE-eq-a2w">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWE-eq-a2w">
                                 <rect key="frame" x="117" y="229" width="180" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1760,6 +1802,11 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="alphabet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-gR-Eus">
                                 <rect key="frame" x="70" y="88" width="275" height="75"/>
@@ -1781,7 +1828,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMj-SF-N2p">
-                                <rect key="frame" x="133" y="186" width="148.5" height="34.5"/>
+                                <rect key="frame" x="132.66666666666666" y="186" width="148.99999999999997" height="34.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.5" id="8bM-KM-TTI"/>
                                 </constraints>
@@ -1790,9 +1837,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Cpz-vh-b0U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Cpz-vh-b0U" firstAttribute="bottom" secondItem="bHE-fn-fr1" secondAttribute="bottom" constant="78" id="5RL-0U-dsU" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="Cpz-vh-b0U" firstAttribute="bottom" secondItem="bHE-fn-fr1" secondAttribute="bottom" constant="78" id="5RL-0U-dsU" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -1830,7 +1878,6 @@
                             <constraint firstItem="iZg-2s-MDv" firstAttribute="leading" secondItem="d9U-Qo-XNJ" secondAttribute="leading" constant="3" id="vnY-hg-dfh"/>
                             <constraint firstItem="Sng-3s-nFi" firstAttribute="leading" secondItem="d9U-Qo-XNJ" secondAttribute="leadingMargin" constant="45" id="xNO-Qp-8YU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Cpz-vh-b0U"/>
                     </view>
                     <navigationItem key="navigationItem" id="Eaz-K0-Z8S"/>
                     <connections>
@@ -1847,7 +1894,7 @@
         <!--EditProfiles3-->
         <scene sceneID="t5M-AZ-uE7">
             <objects>
-                <viewController title="EditProfiles3" id="slc-zp-7OB" customClass="Edit3ProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles3" id="slc-zp-7OB" customClass="Edit3ProfileViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VEK-2P-Gff">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1882,7 +1929,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correction Factor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNy-hP-2cE">
-                                <rect key="frame" x="3" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="3" y="311" width="187.66666666666666" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="J99-eM-Lfw"/>
                                     <constraint firstAttribute="width" constant="187.66666666666666" id="urc-Qd-Fgy"/>
@@ -1892,7 +1939,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrate             Ratio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DJ-UP-zms">
-                                <rect key="frame" x="206" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="206" y="311" width="187.66666666666663" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187.66666666666666" id="qnA-2S-gB2"/>
                                     <constraint firstAttribute="height" constant="85" id="xrM-Eg-6ts"/>
@@ -1901,7 +1948,7 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQo-Tn-Q5r">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQo-Tn-Q5r">
                                 <rect key="frame" x="43" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1911,8 +1958,13 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsW-vG-VWL">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsW-vG-VWL">
                                 <rect key="frame" x="242" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1922,9 +1974,14 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0G-WY-CQ6">
-                                <rect key="frame" x="116.5" y="230" width="181" height="53"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0G-WY-CQ6">
+                                <rect key="frame" x="116.66666666666669" y="230" width="181" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="181" id="XRH-uF-PQD"/>
@@ -1933,6 +1990,11 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="alphabet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqs-XQ-JzE">
                                 <rect key="frame" x="70" y="88" width="275" height="75"/>
@@ -1954,7 +2016,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z35-2p-LLD">
-                                <rect key="frame" x="113.5" y="187" width="187.5" height="35"/>
+                                <rect key="frame" x="113.33333333333333" y="187" width="187.33333333333337" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187.5" id="CWo-oX-sKD"/>
                                     <constraint firstAttribute="height" constant="35" id="e6N-xa-G5c"/>
@@ -1964,7 +2026,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="V4B-kN-hnm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="V4B-kN-hnm" firstAttribute="trailing" secondItem="FhR-XV-kV7" secondAttribute="trailing" constant="44" id="81N-o4-ttn"/>
                             <constraint firstItem="Sqs-XQ-JzE" firstAttribute="top" secondItem="V4B-kN-hnm" secondAttribute="top" id="81d-nc-BJS"/>
@@ -1983,7 +2046,7 @@
                             <constraint firstItem="Vvn-Jq-0x0" firstAttribute="top" secondItem="Sqs-XQ-JzE" secondAttribute="bottom" constant="302" id="X5r-xU-910"/>
                             <constraint firstItem="V4B-kN-hnm" firstAttribute="trailing" secondItem="Sqs-XQ-JzE" secondAttribute="trailing" constant="69" id="YJt-vS-VCM"/>
                             <constraint firstItem="8DJ-UP-zms" firstAttribute="top" secondItem="Sqs-XQ-JzE" secondAttribute="bottom" constant="148" id="c5x-GR-ahm"/>
-                            <constraint firstItem="V4B-kN-hnm" firstAttribute="bottom" secondItem="FhR-XV-kV7" secondAttribute="bottom" constant="78" id="kk7-xb-W7a" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="V4B-kN-hnm" firstAttribute="bottom" secondItem="FhR-XV-kV7" secondAttribute="bottom" constant="78" id="kk7-xb-W7a" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="30"/>
@@ -2004,7 +2067,6 @@
                             <constraint firstItem="U0G-WY-CQ6" firstAttribute="top" secondItem="Z35-2p-LLD" secondAttribute="bottom" constant="8" id="p62-Wd-qL8"/>
                             <constraint firstItem="vNy-hP-2cE" firstAttribute="leading" secondItem="VEK-2P-Gff" secondAttribute="leading" constant="3" id="x7x-O0-8LS"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="V4B-kN-hnm"/>
                     </view>
                     <navigationItem key="navigationItem" id="INV-8f-c7L"/>
                     <connections>
@@ -2021,7 +2083,7 @@
         <!--EditProfiles4-->
         <scene sceneID="NVc-mg-pBv">
             <objects>
-                <viewController title="EditProfiles4" id="CPd-uN-KEo" customClass="Edit4ProfileViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EditProfiles4" id="CPd-uN-KEo" customClass="Edit4ProfileViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eej-fP-1Ct">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2056,7 +2118,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correction Factor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7k-O2-kZf">
-                                <rect key="frame" x="3" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="3" y="311" width="187.66666666666666" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="AeC-2M-Wna"/>
                                     <constraint firstAttribute="width" constant="187.66666666666666" id="z4k-Nf-IeG"/>
@@ -2066,7 +2128,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrate             Ratio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lW-ml-YCl">
-                                <rect key="frame" x="206" y="311" width="187.5" height="85"/>
+                                <rect key="frame" x="206" y="311" width="187.66666666666663" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187.66666666666666" id="BlZ-UF-P2W"/>
                                     <constraint firstAttribute="height" constant="85" id="mDc-wk-jwr"/>
@@ -2075,7 +2137,7 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RUq-Iy-ljK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CF" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RUq-Iy-ljK">
                                 <rect key="frame" x="43" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2085,8 +2147,13 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EDY-U3-t7T">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EDY-U3-t7T">
                                 <rect key="frame" x="242" y="404" width="107" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2096,9 +2163,14 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1S-c3-Zac">
-                                <rect key="frame" x="116.5" y="230" width="181" height="53"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1S-c3-Zac">
+                                <rect key="frame" x="116.66666666666669" y="230" width="181" height="53"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="auk-hg-3Bn"/>
@@ -2107,6 +2179,11 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="alphabet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R14-hm-Gh7">
                                 <rect key="frame" x="70" y="88" width="275" height="75"/>
@@ -2128,7 +2205,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taG-gc-boy">
-                                <rect key="frame" x="113.5" y="187" width="187.5" height="35"/>
+                                <rect key="frame" x="113.33333333333333" y="187" width="187.33333333333337" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187.5" id="DsJ-Uz-gF4"/>
                                     <constraint firstAttribute="height" constant="35" id="dCx-BL-3cV"/>
@@ -2138,7 +2215,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8Kl-gI-maV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="y5n-md-J4t" firstAttribute="top" secondItem="R14-hm-Gh7" secondAttribute="bottom" constant="302" id="1UB-g4-Rnk"/>
                             <constraint firstItem="i1S-c3-Zac" firstAttribute="centerX" secondItem="eej-fP-1Ct" secondAttribute="centerX" id="3tT-ah-3f7"/>
@@ -2149,7 +2227,7 @@
                             <constraint firstItem="6lW-ml-YCl" firstAttribute="top" secondItem="R14-hm-Gh7" secondAttribute="bottom" constant="148" id="HYY-cm-4LV"/>
                             <constraint firstItem="EDY-U3-t7T" firstAttribute="top" secondItem="R14-hm-Gh7" secondAttribute="bottom" constant="241" id="Nve-At-tfw"/>
                             <constraint firstItem="V1M-zH-WuI" firstAttribute="leading" secondItem="8Kl-gI-maV" secondAttribute="leading" constant="45" id="Pfp-uu-HyG"/>
-                            <constraint firstItem="8Kl-gI-maV" firstAttribute="bottom" secondItem="V1M-zH-WuI" secondAttribute="bottom" constant="78" id="RSk-p9-nvW" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="8Kl-gI-maV" firstAttribute="bottom" secondItem="V1M-zH-WuI" secondAttribute="bottom" constant="78" id="RSk-p9-nvW" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
                                         <real key="value" value="30"/>
@@ -2178,7 +2256,6 @@
                             <constraint firstItem="i1S-c3-Zac" firstAttribute="top" secondItem="taG-gc-boy" secondAttribute="bottom" constant="8" id="sM7-cw-iN5"/>
                             <constraint firstItem="RUq-Iy-ljK" firstAttribute="top" secondItem="R14-hm-Gh7" secondAttribute="bottom" constant="241" id="tS1-96-b68"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="8Kl-gI-maV"/>
                     </view>
                     <navigationItem key="navigationItem" id="bir-jq-3s3"/>
                     <connections>
@@ -2195,7 +2272,7 @@
         <!--Edit Low View Controller-->
         <scene sceneID="CgQ-Ax-YEp">
             <objects>
-                <viewController id="h6z-rb-cyf" customClass="EditLowViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h6z-rb-cyf" customClass="EditLowViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lrm-vL-tDf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2205,7 +2282,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-bQ-s5L">
-                                <rect key="frame" x="82" y="292" width="250" height="75"/>
+                                <rect key="frame" x="82" y="292.33333333333331" width="250" height="75"/>
                                 <color key="backgroundColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="3Aq-ef-Teb"/>
@@ -2230,7 +2307,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New Threshold" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-Zg-Lcr">
-                                <rect key="frame" x="82" y="499" width="250" height="75"/>
+                                <rect key="frame" x="82" y="499.33333333333326" width="250" height="75"/>
                                 <color key="backgroundColor" red="0.82801353929999999" green="0.89097613099999995" blue="0.99080568550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="lfB-TB-V1K"/>
@@ -2238,9 +2315,14 @@
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.2723897696" green="0.33208209280000001" blue="0.40694731470000001" alpha="0.47999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Threshold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-Lb-htW">
-                                <rect key="frame" x="82" y="240" width="250" height="45"/>
+                                <rect key="frame" x="82" y="240.33333333333337" width="250" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="HmV-Gj-0zq"/>
                                 </constraints>
@@ -2249,7 +2331,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3l-tL-ymj">
-                                <rect key="frame" x="113" y="292" width="188" height="75"/>
+                                <rect key="frame" x="113" y="292.33333333333331" width="188" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="gk6-si-SqY"/>
                                 </constraints>
@@ -2258,13 +2340,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Low Threshold" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saf-Jp-dXi">
-                                <rect key="frame" x="0.0" y="102" width="414" height="61.5"/>
+                                <rect key="frame" x="0.0" y="102.00000000000001" width="414" height="61.666666666666671"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="45"/>
                                 <color key="textColor" red="0.27646890280000003" green="0.33216136689999998" blue="0.40287271140000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Threshold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIg-wS-yoZ">
-                                <rect key="frame" x="113" y="446" width="187.5" height="45"/>
+                                <rect key="frame" x="112.99999999999999" y="446.33333333333331" width="187.66666666666663" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="XI1-C0-etX"/>
                                 </constraints>
@@ -2273,9 +2355,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dMG-gC-hFJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="bottom" secondItem="MVf-M7-B8W" secondAttribute="bottom" constant="52" id="0Xc-fD-tPn" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="bottom" secondItem="MVf-M7-B8W" secondAttribute="bottom" constant="52" id="0Xc-fD-tPn" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="35"/>
@@ -2293,7 +2376,7 @@
                             </constraint>
                             <constraint firstItem="4sa-Zg-Lcr" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="82" id="1pF-I9-qbY"/>
                             <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="MVf-M7-B8W" secondAttribute="trailing" constant="44" id="2BJ-ee-7h7"/>
-                            <constraint firstItem="6pw-Lb-htW" firstAttribute="top" secondItem="saf-Jp-dXi" secondAttribute="bottom" constant="76.5" id="64g-Cp-84j" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="6pw-Lb-htW" firstAttribute="top" secondItem="saf-Jp-dXi" secondAttribute="bottom" constant="76.5" id="64g-Cp-84j" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="15"/>
@@ -2312,7 +2395,7 @@
                             <constraint firstItem="6pw-Lb-htW" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="82" id="8oN-TA-ybu"/>
                             <constraint firstItem="saf-Jp-dXi" firstAttribute="top" secondItem="dMG-gC-hFJ" secondAttribute="top" constant="14" id="E71-ed-zg3"/>
                             <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="cYR-bQ-s5L" secondAttribute="trailing" constant="82" id="KbM-ex-5uW"/>
-                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="wIg-wS-yoZ" secondAttribute="trailing" constant="113.5" id="NEU-60-KmE" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="wIg-wS-yoZ" secondAttribute="trailing" constant="113.5" id="NEU-60-KmE" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="80"/>
@@ -2339,7 +2422,7 @@
                             <constraint firstItem="dMG-gC-hFJ" firstAttribute="trailing" secondItem="4sa-Zg-Lcr" secondAttribute="trailing" constant="82" id="sql-dZ-SRL"/>
                             <constraint firstItem="4sa-Zg-Lcr" firstAttribute="top" secondItem="wIg-wS-yoZ" secondAttribute="bottom" constant="8" id="ti9-2I-jzW"/>
                             <constraint firstItem="cYR-bQ-s5L" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="82" id="uOM-K8-BQg"/>
-                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="top" secondItem="cYR-bQ-s5L" secondAttribute="bottom" constant="79" id="vCK-LQ-dTJ" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="top" secondItem="cYR-bQ-s5L" secondAttribute="bottom" constant="79" id="vCK-LQ-dTJ" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="22"/>
@@ -2355,7 +2438,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </constraint>
-                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="113" id="vbl-rt-f3i" customClass="NSLayoutHelper" customModule="DiabetesCalc" customModuleProvider="target">
+                            <constraint firstItem="wIg-wS-yoZ" firstAttribute="leading" secondItem="dMG-gC-hFJ" secondAttribute="leading" constant="113" id="vbl-rt-f3i" customClass="NSLayoutHelper" customModule="SmartDose" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
                                         <real key="value" value="80"/>
@@ -2372,7 +2455,6 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dMG-gC-hFJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="ByO-Iv-HEH"/>
                     <connections>
@@ -2407,7 +2489,7 @@
         <!--Privacy Policy View Controller-->
         <scene sceneID="iUt-4O-Ead">
             <objects>
-                <viewController id="klF-eW-NGz" customClass="PrivacyPolicyViewController" customModule="DiabetesCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="klF-eW-NGz" customClass="PrivacyPolicyViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C3O-q2-ePn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="9500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2443,14 +2525,14 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="R6h-aK-sb9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gdI-Fs-XGK" firstAttribute="top" secondItem="C3O-q2-ePn" secondAttribute="top" id="06M-3R-E4o"/>
                             <constraint firstItem="gdI-Fs-XGK" firstAttribute="leading" secondItem="R6h-aK-sb9" secondAttribute="leading" id="19D-cL-sGa"/>
                             <constraint firstAttribute="bottom" secondItem="gdI-Fs-XGK" secondAttribute="bottom" id="RlK-Xg-guj"/>
                             <constraint firstItem="gdI-Fs-XGK" firstAttribute="trailing" secondItem="R6h-aK-sb9" secondAttribute="trailing" id="dai-V5-rWP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="R6h-aK-sb9"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cvf-57-BAk"/>
                     <size key="freeformSize" width="414" height="9500"/>
@@ -2471,5 +2553,8 @@
         <namedColor name="ourGray">
             <color red="0.2720000147819519" green="0.33199998736381531" blue="0.40700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

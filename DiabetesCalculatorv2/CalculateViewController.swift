@@ -111,9 +111,7 @@ class CalculateViewController: UIViewController {
     //view function. VARS WILL EVENTUALLY NEED TO BE ASSIGNED TO 0
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
-        
-        
+        self.hideKeyboardOnTap()
         currentName = EditProfileViewController.GlobalVariable.profileArray[EditProfileViewController.GlobalVariable.activeIndex]
         currentCorrection = String (EditProfileViewController.GlobalVariable.correctionArray[EditProfileViewController.GlobalVariable.activeIndex])
         currentCarb = String (EditProfileViewController.GlobalVariable.carbArray[EditProfileViewController.GlobalVariable.activeIndex])
