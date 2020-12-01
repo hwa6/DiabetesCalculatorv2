@@ -1678,11 +1678,126 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="whS-Qn-ecY"/>
                         <segue destination="4kV-Bv-uLH" kind="relationship" relationship="viewControllers" id="AXN-CG-lmd"/>
                         <segue destination="RLc-eU-StI" kind="relationship" relationship="viewControllers" id="qFL-3X-0WH"/>
+                        <segue destination="eXh-AC-4tS" kind="relationship" relationship="viewControllers" id="gmY-Bj-ZK0"/>
+                        <segue destination="FgS-tx-huX" kind="relationship" relationship="viewControllers" id="eRa-Ui-WXw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="-979"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="Soo-Gh-r1V">
+            <objects>
+                <viewController title="Camera" id="eXh-AC-4tS" customClass="ImageRecognition" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZp-RP-d9D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lnC-fe-gki"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Camera" image="camera" catalog="system" largeContentSizeImage="camera" selectedImage="camera" id="Lts-YV-9ja"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z60-1z-IrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1703" y="-1594"/>
+        </scene>
+        <!--Captured Foods-->
+        <scene sceneID="Eu5-uj-tgz">
+            <objects>
+                <viewController title="Captured Foods" id="FgS-tx-huX" customClass="SuggestedViewController" customModule="SmartDose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gf-FJ-wvY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="funky-lines" translatesAutoresizingMaskIntoConstraints="NO" id="Ucp-93-Oaw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-Ta-ren">
+                                <rect key="frame" x="0.0" y="224" width="235" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" name="ourGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-zD-meC">
+                                <rect key="frame" x="0.0" y="341" width="235" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" name="ourGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-Mq-Xhn">
+                                <rect key="frame" x="0.0" y="577" width="235" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" name="ourGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tj-Mi-fLf">
+                                <rect key="frame" x="0.0" y="698" width="235" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" name="ourGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Predicted Foods" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhk-Tb-HjI">
+                                <rect key="frame" x="0.0" y="90" width="414" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" name="ourGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToW-gY-14h">
+                                <rect key="frame" x="0.0" y="461" width="235" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" name="ourGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-I7-hVt">
+                                <rect key="frame" x="234" y="292" width="180" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-dc-rif">
+                                <rect key="frame" x="234" y="553" width="180" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99f-bb-flg">
+                                <rect key="frame" x="234" y="423" width="180" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9T-M3-smx">
+                                <rect key="frame" x="234" y="683" width="180" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeI-dC-Zad">
+                                <rect key="frame" x="234" y="160" width="180" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Bp-Mx-Kbh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Captured Food" image="target" catalog="system" largeContentSizeImage="target" selectedImage="target" id="8xE-FM-giI"/>
+                    <connections>
+                        <outlet property="food1" destination="CrL-Ta-ren" id="lAV-Rd-W12"/>
+                        <outlet property="food2" destination="jAK-zD-meC" id="ygR-10-vvJ"/>
+                        <outlet property="food3" destination="ToW-gY-14h" id="98j-Kc-JIb"/>
+                        <outlet property="food4" destination="NBE-Mq-Xhn" id="eOK-sc-fqE"/>
+                        <outlet property="food5" destination="6Tj-Mi-fLf" id="gl7-gY-ara"/>
+                        <outlet property="image1" destination="BeI-dC-Zad" id="Vci-eW-Avo"/>
+                        <outlet property="image2" destination="fLr-I7-hVt" id="8FQ-Ht-0NG"/>
+                        <outlet property="image3" destination="99f-bb-flg" id="WTm-CX-afU"/>
+                        <outlet property="image4" destination="hT8-dc-rif" id="EMt-no-JIb"/>
+                        <outlet property="image5" destination="A9T-M3-smx" id="N9F-oR-4m5"/>
+                        <outlet property="titleLabel" destination="Zhk-Tb-HjI" id="Ao6-Xz-yzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGu-qo-9dv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098.5507246376812" y="-1622.5446428571429"/>
         </scene>
         <!--Profiles-->
         <scene sceneID="bEQ-7t-L4R">
@@ -2546,10 +2661,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="funky-lines" width="133.33332824707031" height="133.33332824707031"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="target" catalog="system" width="128" height="121"/>
         <namedColor name="ourGray">
             <color red="0.2720000147819519" green="0.33199998736381531" blue="0.40700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

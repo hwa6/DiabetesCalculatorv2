@@ -24,6 +24,10 @@
 		BA224D42245B402F00B2DD8E /* UITextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D41245B402F00B2DD8E /* UITextFieldHelper.swift */; };
 		BA224D44245B403700B2DD8E /* UITextViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA224D43245B403700B2DD8E /* UITextViewHelper.swift */; };
 		BABBFA9624511261006470CE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABBFA9524511261006470CE /* EditProfileViewController.swift */; };
+		BABE7B48254E91E000ABD2E6 /* SuggestedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE7B47254E91E000ABD2E6 /* SuggestedViewController.swift */; };
+		BABE7B4B254E91EF00ABD2E6 /* ImageRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE7B4A254E91EF00ABD2E6 /* ImageRecognition.swift */; };
+		BABE7B4E254E91FC00ABD2E6 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE7B4D254E91FC00ABD2E6 /* Food.swift */; };
+		BABE7B51254E922100ABD2E6 /* henryfoodmodel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BABE7B50254E922100ABD2E6 /* henryfoodmodel.mlmodel */; };
 		BAC056E12454AAF7005D21D9 /* Edit2ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056E02454AAF7005D21D9 /* Edit2ProfileViewController.swift */; };
 		BAC056E924563DD9005D21D9 /* Edit4ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */; };
 		BAC056EB245641B9005D21D9 /* Edit3ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC056EA245641B9005D21D9 /* Edit3ProfileViewController.swift */; };
@@ -51,6 +55,10 @@
 		BA224D41245B402F00B2DD8E /* UITextFieldHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldHelper.swift; sourceTree = "<group>"; };
 		BA224D43245B403700B2DD8E /* UITextViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewHelper.swift; sourceTree = "<group>"; };
 		BABBFA9524511261006470CE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		BABE7B47254E91E000ABD2E6 /* SuggestedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedViewController.swift; sourceTree = "<group>"; };
+		BABE7B4A254E91EF00ABD2E6 /* ImageRecognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognition.swift; sourceTree = "<group>"; };
+		BABE7B4D254E91FC00ABD2E6 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		BABE7B50254E922100ABD2E6 /* henryfoodmodel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = henryfoodmodel.mlmodel; sourceTree = "<group>"; };
 		BAC056E02454AAF7005D21D9 /* Edit2ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit2ProfileViewController.swift; sourceTree = "<group>"; };
 		BAC056E824563DD9005D21D9 /* Edit4ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit4ProfileViewController.swift; sourceTree = "<group>"; };
 		BAC056EA245641B9005D21D9 /* Edit3ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit3ProfileViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,10 @@
 			children = (
 				0A3E96B1244A4450003836D9 /* AppDelegate.swift */,
 				0A3E96B3244A4450003836D9 /* SceneDelegate.swift */,
+				BABE7B50254E922100ABD2E6 /* henryfoodmodel.mlmodel */,
+				BABE7B4D254E91FC00ABD2E6 /* Food.swift */,
+				BABE7B4A254E91EF00ABD2E6 /* ImageRecognition.swift */,
+				BABE7B47254E91E000ABD2E6 /* SuggestedViewController.swift */,
 				0A3E96B5244A4450003836D9 /* CalculateViewController.swift */,
 				0A3E96C7244A4682003836D9 /* InfoViewController.swift */,
 				0A3E96B7244A4450003836D9 /* ProfileListViewController.swift */,
@@ -205,12 +217,16 @@
 				BA224D142459560300B2DD8E /* UserAgreementViewController.swift in Sources */,
 				BA224D3C245B401D00B2DD8E /* NSLayoutHelper.swift in Sources */,
 				BA224D3E245B402300B2DD8E /* UIButtonHelper.swift in Sources */,
+				BABE7B51254E922100ABD2E6 /* henryfoodmodel.mlmodel in Sources */,
+				BABE7B4E254E91FC00ABD2E6 /* Food.swift in Sources */,
+				BABE7B48254E91E000ABD2E6 /* SuggestedViewController.swift in Sources */,
 				BAC056E924563DD9005D21D9 /* Edit4ProfileViewController.swift in Sources */,
 				0A3E96B2244A4450003836D9 /* AppDelegate.swift in Sources */,
 				BA224D42245B402F00B2DD8E /* UITextFieldHelper.swift in Sources */,
 				BAC056ED245665C2005D21D9 /* EditTargetViewController.swift in Sources */,
 				BA224D44245B403700B2DD8E /* UITextViewHelper.swift in Sources */,
 				BA224D3A245B401400B2DD8E /* DeviceHelper.swift in Sources */,
+				BABE7B4B254E91EF00ABD2E6 /* ImageRecognition.swift in Sources */,
 				BAC056EB245641B9005D21D9 /* Edit3ProfileViewController.swift in Sources */,
 				0A3E96B4244A4450003836D9 /* SceneDelegate.swift in Sources */,
 			);
