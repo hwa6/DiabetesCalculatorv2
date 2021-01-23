@@ -14,12 +14,14 @@ class Food {
     var carb_max: Int
     var unit: String
     
+    
     init(name:String, real_name:String, carb_min:Int, carb_max:Int, unit:String){
         self.name = name
         self.real_name = real_name
         self.carb_min = carb_min
         self.carb_max = carb_max
         self.unit = unit
+        
     }
     
 

@@ -298,7 +298,8 @@ class SuggestedViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.titleLabel.text = "Predicted Foods"
-        
+        print("worked")
+        print(foods)
         //assigning strings/doubles to labels
         //strings for food names
         //taking struct variables and assinging them to srings for easier programming
